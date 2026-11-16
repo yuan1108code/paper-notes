@@ -15,6 +15,7 @@ papers: []
 | 作者 | Ashish Vaswani、Noam Shazeer、Niki Parmar、Jakob Uszkoreit、Llion Jones、Aidan N. Gomez、Łukasz Kaiser、Illia Polosukhin（八位同等貢獻，排名隨機；Google Brain、Google Research、多倫多大學） |
 | 發表 | NIPS 2017（第 31 屆，長灘）；arXiv 1706.03762，v1 2017/6/12，目前最新 v7 2023/8/2。本筆記依 v7 |
 | 連結 | [arXiv](https://arxiv.org/abs/1706.03762)・[PDF](https://arxiv.org/pdf/1706.03762v7)・[HTML v7](https://arxiv.org/html/1706.03762v7)・[官方程式碼 tensor2tensor](https://github.com/tensorflow/tensor2tensor) |
+| 引用（IEEE） | A. Vaswani et al., "Attention is all you need," in *Proc. Adv. Neural Inf. Process. Syst. (NIPS)*, vol. 30, Long Beach, CA, USA, 2017, pp. 5998–6008. |
 | 動畫解說 | [papers.poyuanchu.com/2017-vaswani-transformer/](https://papers.poyuanchu.com/2017-vaswani-transformer/) |
 | 論文類型 | 方法論文：提出新的模型架構 Transformer |
 | 狀態 | 已讀（2025/2 第一版筆記，2026/11 依新格式改寫） |

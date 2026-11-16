@@ -15,6 +15,7 @@ papers: ["[[【pyannote.audio 2.1 speaker diarization pipeline：principle, benc
 | 作者 | Alexis Plaquet, Hervé Bredin（法國土魯斯大學 IRIT / CNRS） |
 | 發表 | INTERSPEECH 2023（Dublin），pp. 3222–3226；arXiv 2023/10/19 |
 | 連結 | [arXiv](https://arxiv.org/abs/2310.13025)・[PDF](https://arxiv.org/pdf/2310.13025)・[DOI](https://doi.org/10.21437/Interspeech.2023-205)・[程式碼與模型](https://github.com/FrenchKrab/IS2023-powerset-diarization) |
+| 引用（IEEE） | A. Plaquet and H. Bredin, "Powerset multi-class cross entropy loss for neural speaker diarization," in *Proc. Interspeech*, Dublin, Ireland, 2023, pp. 3222–3226, doi: 10.21437/Interspeech.2023-205. |
 | 動畫解說 | [papers.poyuanchu.com/2023-plaquet-powerset/](https://papers.poyuanchu.com/2023-plaquet-powerset/) |
 | 狀態 | 待讀 |
 | 與我的相關度 | 2 / 5（語音領域，但問題建模的思路可借用） |

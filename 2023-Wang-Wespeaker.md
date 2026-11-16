@@ -14,6 +14,7 @@ papers: ["[[【pyannote.audio 2.1 speaker diarization pipeline：principle, benc
 | 作者 | Hongji Wang, Chengdong Liang, Shuai Wang, Zhengyang Chen, Binbin Zhang, Xu Xiang, Yanlei Deng, Yanmin Qian（上海交通大學 X-LANCE、騰訊、NVIDIA、WeNet 開源社群等） |
 | 發表 | ICASSP 2023；arXiv 2022/10/31 |
 | 連結 | [arXiv](https://arxiv.org/abs/2210.17016)・[DOI](https://doi.org/10.1109/ICASSP49357.2023.10096626)・[GitHub](https://github.com/wenet-e2e/wespeaker)・[線上 Demo](https://huggingface.co/spaces/wenet/wespeaker_demo) |
+| 引用（IEEE） | H. Wang et al., "Wespeaker: A research and production oriented speaker embedding learning toolkit," in *Proc. IEEE Int. Conf. Acoust., Speech Signal Process. (ICASSP)*, Rhodes Island, Greece, 2023, pp. 1–5, doi: 10.1109/ICASSP49357.2023.10096626. |
 | 動畫解說 | [papers.poyuanchu.com/2023-wang-wespeaker/](https://papers.poyuanchu.com/2023-wang-wespeaker/) |
 | 論文類型 | 工具包（toolkit）論文：介紹一套開源軟體的設計與基準結果，不是提出單一新演算法 |
 | 狀態 | 待讀 |

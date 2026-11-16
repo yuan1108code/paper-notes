@@ -15,6 +15,7 @@ papers: ["[[【Optimizing generative AI by backpropagating language model feedba
 | 單位 | IDEA Research（粵港澳大灣區數字經濟研究院）、中科院計算所、中山大學、港科大／港科大（廣州）、人大高瓴、北大、Imperial College London、DataArc |
 | 發表 | arXiv 2411.15594 預印本，尚無正式會議或期刊。v1 2024/11/23，到 v6 2025/10/19 共改了六版。本筆記依 v6（目前最新版） |
 | 連結 | [arXiv](https://arxiv.org/abs/2411.15594)・[PDF](https://arxiv.org/pdf/2411.15594v6)・[HTML v6](https://arxiv.org/html/2411.15594v6)・[專案頁（論文清單）](https://awesome-llm-as-a-judge.github.io/) |
+| 引用（IEEE） | J. Gu et al., "A survey on LLM-as-a-judge," 2024, *arXiv:2411.15594*. |
 | 動畫解說 | [papers.poyuanchu.com/2024-gu-llmjudge/](https://papers.poyuanchu.com/2024-gu-llmjudge/) |
 | 論文類型 | 綜述（survey），64 頁、226 篇參考文獻；另外附一組小型實驗（第 4.4 節） |
 | 狀態 | 待讀 |

@@ -14,6 +14,7 @@ papers: ["[[【Interleaving Retrieval with Chain-of-Thought Reasoning for Knowle
 | 作者 | Myeonghwa Lee, Seonho An, Min-Soo Kim（韓國 KAIST 計算學院） |
 | 發表 | NAACL 2024；arXiv 2406.12430（2024/6/18） |
 | 連結 | [arXiv](https://arxiv.org/abs/2406.12430)・[PDF](https://arxiv.org/pdf/2406.12430)・[GitHub（程式碼與資料集）](https://github.com/myeon9h/PlanRAG) |
+| 引用（IEEE） | M. Lee, S. An, and M.-S. Kim, "PlanRAG: A plan-then-retrieval augmented generation for generative large language models as decision makers," in *Proc. Conf. North Amer. Chapter Assoc. Comput. Linguistics: Human Lang. Technol. (NAACL-HLT)*, Mexico City, Mexico, 2024, pp. 6537–6555, doi: 10.18653/v1/2024.naacl-long.364. |
 | 動畫解說 | [papers.poyuanchu.com/2024-lee-planrag/](https://papers.poyuanchu.com/2024-lee-planrag/) |
 | 論文類型 | 新任務 + 新資料集 + 新方法：定義 Decision QA、建立 DQA 資料集、提出 PlanRAG |
 | 狀態 | 待讀 |

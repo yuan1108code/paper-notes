@@ -14,6 +14,7 @@ papers: ["[[【Only Ask What You Don't Know：Grounded Delta Planning for Effici
 | 作者 | Yuchao Wu、Junqin Li、XingCheng Liang、Yongjie Chen、Yinghao Liang、Linyuan Mo、Guanxian Li（Zleap AI，公司團隊） |
 | 發表 | arXiv 2606.15971（v1 2026/6/14，v2 2026/8/25，本筆記依 v2）；cs.CL；尚未標註會議 |
 | 連結 | [arXiv](https://arxiv.org/abs/2606.15971)・[PDF](https://arxiv.org/pdf/2606.15971)・[HTML](https://arxiv.org/html/2606.15971v2)・[評測程式（SAG-Benchmark）](https://github.com/Zleap-AI/SAG-Benchmark)・[工程版（SAG）](https://github.com/Zleap-AI/SAG) |
+| 引用（IEEE） | Y. Wu et al., "SAG: SQL-retrieval augmented generation with query-time dynamic hyperedges," 2026, *arXiv:2606.15971*. |
 | 動畫解說 | [papers.poyuanchu.com/2026-wu-sag/](https://papers.poyuanchu.com/2026-wu-sag/) |
 | 論文類型 | 方法論文：不建全域知識圖譜的結構化檢索架構 |
 | 狀態 | 待讀 |

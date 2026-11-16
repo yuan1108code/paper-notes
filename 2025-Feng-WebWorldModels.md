@@ -14,6 +14,7 @@ papers: []
 | 作者 | Jichen Feng（Princeton、UPenn）、Yifan Zhang（Princeton）、Chenggong Zhang（UCLA）、Yifu Lu（Princeton），以上四位共同一作；Shilong Liu、Mengdi Wang（通訊作者，Princeton） |
 | 發表 | arXiv 2512.23676 預印本，尚無正式發表。v1 2025/12/29；v2 2026/11/9 只改了排版和一處章節編號（「Section 3」改成「Section 2」），內容相同。本筆記依 v1 |
 | 連結 | [arXiv](https://arxiv.org/abs/2512.23676)・[PDF](https://arxiv.org/pdf/2512.23676v1)・[HTML v1](https://arxiv.org/html/2512.23676v1)・[專案頁](https://princeton-ai2-lab.github.io/Web-World-Models/)・[GitHub](https://github.com/Princeton-AI2-Lab/Web-World-Models) |
+| 引用（IEEE） | J. Feng, Y. Zhang, C. Zhang, Y. Lu, S. Liu, and M. Wang, "Web world models," 2025, *arXiv:2512.23676*. |
 | 動畫解說 | [papers.poyuanchu.com/2025-feng-wwm/](https://papers.poyuanchu.com/2025-feng-wwm/) |
 | 論文類型 | 立場／系統展示論文：提出一個架構概念，用 7 個網頁示範說明，**沒有任何量化實驗** |
 | 狀態 | 待讀 |

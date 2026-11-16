@@ -14,6 +14,7 @@ papers: ["[[【Powerset multi-class cross entropy loss for neural speaker diariz
 | 作者 | Hervé Bredin（法國土魯斯大學 IRIT / CNRS） |
 | 發表 | INTERSPEECH 2023（Dublin），pp. 1983–1987 |
 | 連結 | [HAL](https://hal.science/hal-04247212v1)・[PDF（ISCA）](https://www.isca-archive.org/interspeech_2023/bredin23_interspeech.pdf)・[DOI](https://doi.org/10.21437/Interspeech.2023-105)・[GitHub](https://github.com/pyannote/pyannote-audio)・[預先算好的結果](https://hf.co/pyannote/speaker-diarization/tree/2.1.1) |
+| 引用（IEEE） | H. Bredin, "pyannote.audio 2.1 speaker diarization pipeline: Principle, benchmark, and recipe," in *Proc. Interspeech*, Dublin, Ireland, 2023, pp. 1983–1987, doi: 10.21437/Interspeech.2023-105. |
 | 動畫解說 | [papers.poyuanchu.com/2023-bredin-pyannote21/](https://papers.poyuanchu.com/2023-bredin-pyannote21/) |
 | 論文類型 | 工具包論文：說明開源工具 pyannote.audio 2.1 的語者分段流程、在 11 個資料集上的基準結果，以及調整到自己資料的做法 |
 | 比賽成績 | Ego4D 2022 第 1 名、Albayzin 2022 第 1 名、VoxSRC 2022 第 6 名 |

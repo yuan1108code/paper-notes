@@ -14,6 +14,7 @@ papers: ["[[【Interleaving Retrieval with Chain-of-Thought Reasoning for Knowle
 | 作者 | Mert Yuksekgonul, Federico Bianchi, Joseph Boen, Sheng Liu, Pan Lu, Zhi Huang, Carlos Guestrin, James Zou（史丹佛大學、Chan Zuckerberg Biohub） |
 | 發表 | Nature 639, 609–616（2025/3/19）；arXiv 預印本 2024/6 |
 | 連結 | [DOI](https://doi.org/10.1038/s41586-025-08661-4)・[arXiv](https://arxiv.org/abs/2406.07496)・[GitHub（textgrad）](https://github.com/zou-group/textgrad) |
+| 引用（IEEE） | M. Yuksekgonul et al., "Optimizing generative AI by backpropagating language model feedback," *Nature*, vol. 639, no. 8055, pp. 609–616, Mar. 2025, doi: 10.1038/s41586-025-08661-4. |
 | 動畫解說 | [papers.poyuanchu.com/2025-yuksekgonul-textgrad/](https://papers.poyuanchu.com/2025-yuksekgonul-textgrad/) |
 | 論文類型 | 方法 + 框架論文：提出 TextGrad，並在 5 類任務上示範 |
 | 狀態 | 待讀 |

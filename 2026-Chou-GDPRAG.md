@@ -14,6 +14,7 @@ papers: ["[[【Interleaving Retrieval with Chain-of-Thought Reasoning for Knowle
 | 作者 | Wei-Chieh Chou、Xuanjun Chen（共同第一作者）、Jian-Ren Lin、Claire Lin、Hung-yi Lee（李宏毅）、Jyh-Shing Roger Jang（張智星），全部來自國立臺灣大學 |
 | 發表 | COLM 2026（arXiv 註記 Accepted by COLM 2026）；arXiv 2606.22681（v1 2026/6/21，v2 2026/9/27，兩版內容相同，只改致謝與排版） |
 | 連結 | [arXiv](https://arxiv.org/abs/2606.22681)・[PDF](https://arxiv.org/pdf/2606.22681)・[HTML](https://arxiv.org/html/2606.22681v1) |
+| 引用（IEEE） | W.-C. Chou, X. Chen, J.-R. Lin, C. Lin, H.-Y. Lee, and J.-S. R. Jang, "Only ask what you don't know: Grounded delta planning for efficient multi-step RAG," in *Proc. Conf. Lang. Model. (COLM)*, 2026, *arXiv:2606.22681*. |
 | 動畫解說 | [papers.poyuanchu.com/2026-chou-gdprag/](https://papers.poyuanchu.com/2026-chou-gdprag/) |
 | 論文類型 | 方法論文：不需訓練的多步驟 RAG 規劃方法 GDP-RAG |
 | 狀態 | 待讀 |

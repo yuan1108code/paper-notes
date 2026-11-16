@@ -15,6 +15,7 @@ papers: ["[[【AnomalyGPT：Detecting Industrial Anomalies Using Large Vision-La
 | 發表 | ICLR 2025。arXiv 2410.09453：v1 2024/10/12，v2 2025/1/7，v3 2025/2/21 |
 | 版本 | 本筆記依 ICLR 正式版（23 頁，含附錄），數字和 arXiv v3 完全相同。v1 還沒有 Claude-3.5、人類評估、CoT／拿掉影像／召回率精確率三張表和「GT 轉文字」實驗，這些都是 v2 之後才加的 |
 | 連結 | [ICLR PDF](https://proceedings.iclr.cc/paper_files/paper/2025/file/d91ffbe9c126765755ff52d36b715683-Paper-Conference.pdf)・[arXiv](https://arxiv.org/abs/2410.09453)・[HTML v3](https://arxiv.org/html/2410.09453v3)・[GitHub](https://github.com/jam-cc/MMAD)（約 280 顆星，2026/10 仍在更新） |
+| 引用（IEEE） | X. Jiang et al., "MMAD: A comprehensive benchmark for multimodal large language models in industrial anomaly detection," in *Proc. Int. Conf. Learn. Represent. (ICLR)*, Singapore, 2025. |
 | 動畫解說 | [papers.poyuanchu.com/2025-jiang-mmad/](https://papers.poyuanchu.com/2025-jiang-mmad/) |
 | 論文類型 | 評測基準論文：做一個資料集，測十幾個多模態大型語言模型，再試兩種不用訓練的加強法 |
 | 狀態 | 待讀 |

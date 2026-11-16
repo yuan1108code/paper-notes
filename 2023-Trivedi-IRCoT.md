@@ -14,6 +14,7 @@ papers: ["[[【Optimizing generative AI by backpropagating language model feedba
 | 作者 | Harsh Trivedi, Niranjan Balasubramanian（Stony Brook University）、Tushar Khot, Ashish Sabharwal（Allen Institute for AI） |
 | 發表 | ACL 2023；arXiv 2212.10509（v2，2023/6/23） |
 | 連結 | [arXiv](https://arxiv.org/abs/2212.10509)・[PDF](https://arxiv.org/pdf/2212.10509)・[GitHub（ircot）](https://github.com/stonybrooknlp/ircot) |
+| 引用（IEEE） | H. Trivedi, N. Balasubramanian, T. Khot, and A. Sabharwal, "Interleaving retrieval with chain-of-thought reasoning for knowledge-intensive multi-step questions," in *Proc. 61st Annu. Meeting Assoc. Comput. Linguistics (ACL)*, Toronto, ON, Canada, 2023, pp. 10014–10037, doi: 10.18653/v1/2023.acl-long.557. |
 | 動畫解說 | [papers.poyuanchu.com/2023-trivedi-ircot/](https://papers.poyuanchu.com/2023-trivedi-ircot/) |
 | 論文類型 | 方法論文：提出不需訓練的檢索方法 IRCoT |
 | 狀態 | 待讀 |

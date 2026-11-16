@@ -14,6 +14,7 @@ papers: ["[[【SAG：SQL-Retrieval Augmented Generation with Query-Time Dynamic 
 | 作者 | Weixin Chen（Rutgers、香港浸會大學）、Yuhan Zhao、Jingyuan Huang、Zihe Ye、Clark Mingxuan Ju、Tong Zhao、Neil Shah（Snap Inc.，僅擔任顧問）、Li Chen、Yongfeng Zhang（通訊作者，Rutgers） |
 | 發表 | ACL 2026 Main Conference；arXiv 2601.08816（v1 2026/1/13、v2 2026/1/17、v3 2026/4/28）。本筆記依 v1，v3 新增的實驗另外標註 |
 | 連結 | [arXiv](https://arxiv.org/abs/2601.08816)・[PDF](https://arxiv.org/pdf/2601.08816)・[HTML v1](https://arxiv.org/html/2601.08816v1)・[GitHub](https://github.com/rutgerswiselab/memrec)・[專案頁](https://memrec.weixinchen.com) |
+| 引用（IEEE） | W. Chen et al., "MemRec: Collaborative memory-augmented agentic recommender system," in *Proc. 64th Annu. Meeting Assoc. Comput. Linguistics (ACL)*, San Diego, CA, USA, 2026, pp. 44515–44544, doi: 10.18653/v1/2026.acl-long.2061. |
 | 動畫解說 | [papers.poyuanchu.com/2026-chen-memrec/](https://papers.poyuanchu.com/2026-chen-memrec/) |
 | 論文類型 | 方法論文：不需訓練的 LLM 代理人推薦系統架構 |
 | 狀態 | 待讀 |

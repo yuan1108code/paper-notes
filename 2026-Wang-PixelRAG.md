@@ -14,6 +14,7 @@ papers: ["[[【Interleaving Retrieval with Chain-of-Thought Reasoning for Knowle
 | 作者 | Yichuan Wang, Zhifei Li, Zirui Wang, Paul Teiletche, Lesheng Jin, Matei Zaharia, Joseph E. Gonzalez, Sewon Min（UC Berkeley、Princeton、EPFL、Databricks、中國人民大學） |
 | 發表 | arXiv 2606.28344（2026/6/1），預印本 |
 | 連結 | [arXiv](https://arxiv.org/abs/2606.28344)・[PDF](https://arxiv.org/pdf/2606.28344)・[GitHub](https://github.com/StarTrail-org/PixelRAG) |
+| 引用（IEEE） | Y. Wang et al., "PixelRAG: Web screenshots beat text for retrieval-augmented generation," 2026, *arXiv:2606.28344*. |
 | 動畫解說 | [papers.poyuanchu.com/2026-wang-pixelrag/](https://papers.poyuanchu.com/2026-wang-pixelrag/) |
 | 論文類型 | 方法 + 系統論文：提出全程用截圖做檢索與閱讀的 RAG，並做到整個維基百科的規模 |
 | 狀態 | 待讀 |
