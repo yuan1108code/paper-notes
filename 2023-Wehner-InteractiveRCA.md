@@ -13,7 +13,7 @@ papers: ["[[【Triad：Empowering LMM-Based Anomaly Detection with Expert-Guided
 |---|---|
 | 作者 | Christoph Wehner（班貝格大學認知系統組）、Maximilian Kertel（BMW 電池芯技術開發）、Judith Wewerka（BMW 數位化與創新） |
 | 發表 | 2023 IEEE 97th Vehicular Technology Conference（VTC2023-Spring），義大利佛羅倫斯，2023 年 6 月，頁 1–7。DOI [10.1109/VTC2023-Spring57618.2023.10199563](https://doi.org/10.1109/VTC2023-Spring57618.2023.10199563) |
-| 版本 | 你給的 IEEE 連結需要訂閱，我連不進去（IEEE 擋自動存取），所以本筆記依作者放在 arXiv 的版本（2402.00043v1，2024/1/20，7 頁）。書目資料取自 IEEE 頁面的存檔，標題、作者、摘要和 IEEE 版相同；內文是否和 IEEE 版逐字一樣我無法確認 |
+| 版本 | 你給的 IEEE 連結需要訂閱，我連不進去（IEEE 擋自動存取），所以本筆記依作者放在 arXiv 的版本（2402.00043v1，2024/1/20，7 頁；你後來給的 PDF 和 arXiv v1 逐位元相同）。圖片取自這份 PDF（arXiv 授權 CC BY-NC-ND 4.0），未修改，存放在我的 GitHub 筆記庫。書目資料取自 IEEE 頁面的存檔，標題、作者、摘要和 IEEE 版相同；內文是否和 IEEE 版逐字一樣我無法確認 |
 | 連結 | [IEEE Xplore](https://ieeexplore.ieee.org/document/10199563)・[arXiv](https://arxiv.org/abs/2402.00043)・[PDF](https://arxiv.org/pdf/2402.00043v1) |
 | 動畫解說 | [papers.poyuanchu.com/2023-wehner-rca/](https://papers.poyuanchu.com/2023-wehner-rca/) |
 | 論文類型 | 系統／應用論文：BMW 電動車產線的根因分析工具，評估很少（三個小實驗，沒有和其他方法比較） |
@@ -65,25 +65,15 @@ papers: ["[[【Triad：Empowering LMM-Based Anomaly Detection with Expert-Guided
 
 ### 3.1 系統架構
 
-<center><b>圖 1：系統架構（依原論文 Fig. 1 以文字重現）</b></center>
-
-```
- 製程專家 ──Interacts with──▶ [Frontend：Interactive User Interface]
-                                   │ Requests Retraining / Grabs Meta-Infos / Updates Blacklist
-                                   ▼
- [Data Layer：Sensor Network] ◀── Grabs Data / Issues Data Preprocessing / Grabs Metadata ──┐
-                                                                                          │
- [Knowledge Graph] ◀── Grabs Blacklist / Updates Knowledge Graph ── [Application Logic：Controller]
-                                                                      │            ▲
-                    Issues Iteration（Retraining）/ Gives Blacklist   ▼            │ Pulls Edges and Weights
-                                                      [Model：Bayesian Network] ───┘
-                                                                      │
-                                   Frontend ◀── Grabs Bayesian Network ┘
-```
+<center>
+<img src="https://raw.githubusercontent.com/yuan1108code/paper-notes/main/assets/2023-Wehner-InteractiveRCA/fig1.png" alt="圖 1" width="85%" style="background:#fff">
+<br>
+<b>圖 1：系統架構（原論文 Fig. 1）</b>
+</center>
 
 > [!NOTE]
 > **圖 1 怎麼看**
-> 五個微服務，全部透過中間的 <b>Controller</b> 溝通：
+> 五個方框是五個微服務（藍色粗框是整個系統，右邊黃色人像是框外的製程專家），全部透過中間的 <b>Controller</b>（黃色齒輪）溝通，箭頭上的字是呼叫的動作：
 > - <b>Data Layer</b>（左上）：從產線感測器網路抓資料、做前處理
 > - <b>Knowledge Graph</b>（左下）：存專家知識和黑名單
 > - <b>Bayesian Network</b>（上中）：Controller 交給它資料和黑名單、要求重新訓練，再取回學到的邊和權重
@@ -93,40 +83,25 @@ papers: ["[[【Triad：Empowering LMM-Based Anomaly Detection with Expert-Guided
 
 ### 3.2 知識圖譜的設計
 
-<center><b>圖 2：知識圖譜的結構（依原論文 Fig. 2 以文字重現）</b></center>
-
-```
- Line ──hasSuccessorLine──▶ Line
-  │ hasStation
-  ▼
- Station ──hasSuccessorStation──▶ Station
-  │ hasProcessStep
-  ▼
- Process Step ──hasSuccessorProcessStep──▶ Process Step
-  │ hasVariable
-  ▼
- Sensor Variable ──hasNoImpact──▶ Sensor Variable
- （子類別：Root／Leaf／Irrelevant Variable）
-```
+<center>
+<img src="https://raw.githubusercontent.com/yuan1108code/paper-notes/main/assets/2023-Wehner-InteractiveRCA/fig2.png" alt="圖 2" width="60%" style="background:#fff">
+<br>
+<b>圖 2：知識圖譜的結構（原論文 Fig. 2）</b>
+</center>
 
 > [!NOTE]
 > **圖 2 怎麼看**
-> 四層，每層都有一條「下一個」關係（自己指向自己的迴圈），表示順序：產線（Line）有多個站點（Station），站點有多道工序（Process Step），工序量測多個感測變數（Sensor Variable）。最底層多一條 hasNoImpact，表示專家確定兩個變數之間沒有因果關係。感測變數還可以標成三種子類別之一。
+> 四層，每層都有一條「下一個」關係（自己指向自己的迴圈），表示順序：產線（Line）有多個站點（Station），站點有多道工序（Process Step），工序量測多個感測變數（Sensor Variable）。最底層多一條 hasNoImpact，表示專家確定兩個變數之間沒有因果關係。感測變數還可以標成三種子類別之一（Root／Leaf／Irrelevant Variable，圖 2 沒畫出來，在圖 3 的節點標籤上才看得到）。
 
-<center><b>圖 3：知識圖譜範例（依原論文 Fig. 3 以文字重現）</b></center>
-
-```
- 站點：   Sorting Station ──▶ Welding Station ◀── Gluing Station
-             │                    │                 │         │
- 工序：    Sorting             Welding        Surface Prep. ──▶ Gluing
-           │      │               │                 │          │      │
- 變數：  Weight  Sorting Time  Heat Input ◀─╳─ Humidity    Pressure  Amount Adhesive
-         (Root)  (Irrelevant)   (Leaf)  hasNoImpact (Root)
-```
+<center>
+<img src="https://raw.githubusercontent.com/yuan1108code/paper-notes/main/assets/2023-Wehner-InteractiveRCA/fig3.png" alt="圖 3" width="85%" style="background:#fff">
+<br>
+<b>圖 3：知識圖譜範例（原論文 Fig. 3）</b>
+</center>
 
 > [!NOTE]
 > **圖 3 怎麼看**
-> 一個小產線：分揀站和塗膠站都在焊接站之前。塗膠站有兩道工序，先做表面處理、再塗膠。六個感測變數：
+> 三個虛線框由上到下是 Station、Process Step、Sensor Variable 三層，每個變數節點下方的小框是它的子類別。一個小產線：分揀站和塗膠站都在焊接站之前。塗膠站有兩道工序，先做表面處理、再塗膠。六個感測變數：
 > - <b>Weight</b>（重量，根變數）、<b>Sorting Time</b>（分揀時間，無關變數）：在分揀工序量測
 > - <b>Heat Input</b>（熱輸入，葉變數，最後一道工序）：在焊接量測
 > - <b>Humidity</b>（濕度，根變數，環境因素不受產線影響）：在表面處理量測
@@ -138,30 +113,40 @@ papers: ["[[【Triad：Empowering LMM-Based Anomaly Detection with Expert-Guided
 
 ### 3.3 推理如何縮小搜尋空間
 
-<center><b>圖 4：候選因果邊（依原論文 Fig. 4–6 以文字重現）</b></center>
+<center>
+<img src="https://raw.githubusercontent.com/yuan1108code/paper-notes/main/assets/2023-Wehner-InteractiveRCA/fig4.png" alt="圖 4" width="60%" style="background:#fff">
+<br>
+<b>圖 4：不用知識圖譜時的候選因果關係（原論文 Fig. 4）</b>
+</center>
 
-```
- Fig. 4 不用知識圖譜：6 個變數兩兩之間都可能 → 6 × 5 = 30 條有向邊
- Fig. 5 用知識圖譜後：7 條
-   Humidity → Amount Adhesive      Humidity → Pressure
-   Amount Adhesive ↔ Pressure（同工序，方向未知，算 2 條）
-   Amount Adhesive → Heat Input    Pressure → Heat Input
-   Weight → Heat Input
-   （Sorting Time 是無關變數，完全排除；Humidity → Heat Input 被 hasNoImpact 排除）
- Fig. 6 假設的真實因果圖：5 條
-   Humidity → Amount Adhesive      Humidity → Pressure
-   Pressure → Amount Adhesive      Amount Adhesive → Heat Input
-   Weight → Heat Input
-```
+<center>
+<img src="https://raw.githubusercontent.com/yuan1108code/paper-notes/main/assets/2023-Wehner-InteractiveRCA/fig5.png" alt="圖 5" width="60%" style="background:#fff">
+<br>
+<b>圖 5：用知識圖譜推理後的候選因果關係（原論文 Fig. 5）</b>
+</center>
+
+<center>
+<img src="https://raw.githubusercontent.com/yuan1108code/paper-notes/main/assets/2023-Wehner-InteractiveRCA/fig6.png" alt="圖 6" width="60%" style="background:#fff">
+<br>
+<b>圖 6：假設的真實因果圖（原論文 Fig. 6）</b>
+</center>
+
+<center><b>表 2：三張圖的候選邊整理</b></center>
+
+| 圖 | 邊數 | 內容 |
+|---|---|---|
+| 圖 4：不用知識圖譜 | 15 條無向線 = 30 條有向邊 | 6 個變數兩兩相連（完全圖），方向全部未知 |
+| 圖 5：用知識圖譜後 | 7 條 | Humidity → Amount Adhesive、Humidity → Pressure、Amount Adhesive — Pressure（同工序，畫成無向線，方向未知，算 2 條）、Amount Adhesive → Heat Input、Pressure → Heat Input、Weight → Heat Input；Sorting Time 是無關變數，完全排除；Humidity → Heat Input 被 hasNoImpact 排除 |
+| 圖 6：假設的真實因果圖 | 5 條 | Humidity → Amount Adhesive、Humidity → Pressure、Pressure → Amount Adhesive、Amount Adhesive → Heat Input、Weight → Heat Input |
 
 > [!NOTE]
-> **圖 4 怎麼看**
-> 從 30 條候選縮到 7 條，真實的 5 條都在這 7 條裡面。要學的只剩：7 條裡哪些是真的、以及同一工序內 Pressure 和 Amount Adhesive 誰影響誰。這就是全文的核心示範。（Fig. 5 裡分揀站的 Weight 和塗膠站的變數之間沒有任何候選邊，雖然兩站之間沒有先後關係；論文沒說明這條規則。）
+> **圖 4–6 怎麼看**
+> 圖 4 的線沒有箭頭，表示「可能有關係、方向不知道」；圖 5、圖 6 有箭頭的是方向已定的邊，圖 5 裡 Amount Adhesive 和 Pressure 之間那條沒有箭頭的線，就是同工序內方向未知的邊。從 30 條候選縮到 7 條，真實的 5 條都在這 7 條裡面。要學的只剩：7 條裡哪些是真的、以及同一工序內 Pressure 和 Amount Adhesive 誰影響誰。這就是全文的核心示範。圖 5 往下指到 Heat Input 的垂直箭頭是從 Amount Adhesive 出發，只是剛好穿過 Humidity → Pressure 那條線，容易誤看成從線上分岔。（圖 5 裡分揀站的 Weight 和塗膠站的變數之間沒有任何候選邊，雖然兩站之間沒有先後關係；論文沒說明這條規則。）
 
 > [!WARNING]
 > **範例的文字、公式和圖互相矛盾。**
-> - 3.3 節說「Weight 和 Sorting Time 可能影響 Heat Input，但 Humidity、Amount Adhesive、Pressure 不行」。但圖 3 的塗膠站在焊接站之前，Fig. 5 也列出 Amount Adhesive → Heat Input 和 Pressure → Heat Input，Fig. 6 的真實因果圖更把 Amount Adhesive → Heat Input 當成真的；Sorting Time 又被標成「無關變數」要排除
-> - 式 (2) 寫 HeatInput = f₁(Humidity) + f₂(AmountAdhesive) + Noise，用的正好是圖 3 被 hasNoImpact 禁止的 Humidity；式 (1) 和 Fig. 6 都是 Weight 和 Amount Adhesive
+> - 3.3 節說「Weight 和 Sorting Time 可能影響 Heat Input，但 Humidity、Amount Adhesive、Pressure 不行」。但圖 3 的塗膠站在焊接站之前，圖 5 也列出 Amount Adhesive → Heat Input 和 Pressure → Heat Input，圖 6 的真實因果圖更把 Amount Adhesive → Heat Input 當成真的；Sorting Time 又被標成「無關變數」要排除
+> - 式 (2) 寫 HeatInput = f₁(Humidity) + f₂(AmountAdhesive) + Noise，用的正好是圖 3 被 hasNoImpact 禁止的 Humidity；式 (1) 和圖 6 都是 Weight 和 Amount Adhesive
 > - 文中說「Weight 和 Humidity 是根變數，只要考慮把它們放在前兩個位置的排列，排列數減少 30 倍」。6 個變數共 6! = 720 種排列；兩個根變數放在前兩位、順序不限是 2! × 4! = 48 種，**只減少 15 倍**；要減少 30 倍得連兩者的先後也固定（720 / 24）
 
 ### 3.4 因果貝氏網路怎麼學
@@ -170,7 +155,7 @@ papers: ["[[【Triad：Empowering LMM-Based Anomaly Detection with Expert-Guided
 
 $$\text{HeatInput} = f_1(\text{Weight}) + f_2(\text{AmountAdhesive}) + \text{Noise}$$
 
-（式子依 Fig. 6 修正；論文式 (2) 誤寫成 Humidity。）雜訊是常態分布、f 非線性時，理論上可以從觀察資料辨認出真正的因果圖。CAM（Bühlmann et al., 2014）分兩步：
+（式子依圖 6 修正；論文式 (2) 誤寫成 Humidity。）雜訊是常態分布、f 非線性時，理論上可以從觀察資料辨認出真正的因果圖。CAM（Bühlmann et al., 2014）分兩步：
 
 1. **找因果順序**：在所有排列 π 中找使下式最小的那個，f 用最大概似估計
 
@@ -184,10 +169,16 @@ $$S(\pi) = \sum_{k=1}^{p} \log\left[\sum_{\ell=1}^{N}\left(x_{\ell k} - \sum_{\p
 
 ### 3.5 互動介面
 
-原論文 Fig. 7 是工具「RootFinder」的截圖（沒有公開圖檔，以下用文字描述）：
+工具「RootFinder」的介面截圖：
+
+<center>
+<img src="https://raw.githubusercontent.com/yuan1108code/paper-notes/main/assets/2023-Wehner-InteractiveRCA/fig7.png" alt="圖 7" width="100%" style="background:#fff">
+<br>
+<b>圖 7：互動介面 RootFinder（原論文 Fig. 7）</b>
+</center>
 
 > [!NOTE]
-> **圖 5 怎麼看（原論文 Fig. 7，介面截圖）**
+> **圖 7 怎麼看**
 > - <b>左邊大圖</b>：學到的根因圖，藍色節點是感測變數，<b>紅色</b>是出問題的變數（範例搜尋「Heat Input」），<b>黃色</b>是在根因路徑上的變數
 > - <b>中間「Node」面板</b>：變數名稱、影響最大的三個因素，以及標記 ② 的屬性勾選框（Root Node、Irrelevant Node、Leaf Node），範例中 Heat Input 勾了 Leaf Node
 > - <b>右邊「Edge」面板</b>：選取的邊 FROM Pressure TO Heat Input，權重 0.1340846945，下面是標記 ① 的「Add To Blacklist」勾選框
@@ -215,25 +206,33 @@ $$S(\pi) = \sum_{k=1}^{p} \log\left[\sum_{\ell=1}^{N}\left(x_{\ell k} - \sum_{\p
 
 ### 5.1 知識圖譜比例與學到的因果邊
 
-<center><b>表 2：知識圖譜比例與學到的因果邊數（依原論文 Fig. 8 估讀）</b></center>
+<center>
+<img src="https://raw.githubusercontent.com/yuan1108code/paper-notes/main/assets/2023-Wehner-InteractiveRCA/fig8.png" alt="圖 8" width="60%" style="background:#fff">
+<br>
+<b>圖 8：知識圖譜比例與學到的因果邊數（原論文 Fig. 8）</b>
+</center>
+
+<center><b>表 3：知識圖譜比例與學到的因果邊數（從 PDF 向量圖座標還原）</b></center>
 
 | 使用的知識圖譜比例 | 25% | 50% | 75% | 100% |
 |---|---|---|---|---|
-| 學到的因果邊數（約略值，從圖估讀） | 約 972 | 約 1,010 | 約 955 | 約 398 |
+| 學到的因果邊數 | 974 | 1,012 | 955 | 398 |
 
 > [!NOTE]
-> **表 2 怎麼看（原論文 Fig. 8）**
-> 橫軸是使用多少比例的知識圖譜資訊，縱軸「Number (n)」，只有一條紅線、四個點。25% 到 75% 幾乎持平（50% 還比 25% 高），只有到 100% 才從約 955 掉到約 398。圖說寫「學習時間和 CER 數量都下降」，但圖上只有一條線，也沒有圖例。
+> **圖 8 怎麼看**
+> 橫軸是使用多少比例的知識圖譜資訊，縱軸「Number (n)」，只有一條紅線、四個點。25% 到 75% 幾乎持平（50% 還比 25% 高），只有到 100% 才從 955 掉到 398。圖說寫「學習時間和 CER 數量都下降」，但圖上只有一條線，也沒有圖例。
+>
+> 表 3 的數字不是用眼睛估的：原論文 Fig. 8 在 PDF 裡是向量圖，我把頁面轉成 SVG，用 400／600／800 三條格線的座標換算四個點的高度，得到的剛好都是整數（974.0、1,012.0、955.0、398.0），應該就是原始數據。
 
 > [!WARNING]
 > **兩個主要數字都對不太上圖。**
-> - <b>「訓練時間減少 79.0%」</b>：Fig. 8 只有一條線、縱軸是「數量」，圖上找不到訓練時間，論文也沒有任何表列出秒數。這個數字無法驗證
-> - <b>「刪掉 60.6% 的假因果邊」</b>：用估讀值算，(1,010 − 398) / 1,010 = 60.6%，正好是從**最高點 50%** 算到 100%；從 25% 起算是 59.1%。更大的問題是它量的是「學到的邊少了多少」，不是「假的邊少了多少」：這條產線沒有真實因果圖，少掉的邊也可能是真的。摘要和結論都寫成「減少假因果關係」，證據不支持
+> - <b>「訓練時間減少 79.0%」</b>：圖 8 只有一條線、縱軸是「數量」，圖上找不到訓練時間，論文也沒有任何表列出秒數。這個數字無法驗證
+> - <b>「刪掉 60.6% 的假因果邊」</b>：用還原的數字算，(1,012 − 398) / 1,012 = 60.67%（論文寫 60.6%，是無條件捨去），正好是從**最高點 50%** 算到 100%；從 25% 起算是 59.1%，從 75% 起算是 58.3%。更大的問題是它量的是「學到的邊少了多少」，不是「假的邊少了多少」：這條產線沒有真實因果圖，少掉的邊也可能是真的。摘要和結論都寫成「減少假因果關係」，證據不支持
 > - 曲線在 25%–75% 幾乎不動、只有 100% 突然下降，比較像某一類資訊（例如根／葉／無關變數標記）只在 100% 時才完整，而不是「知識越多越好」的漸進效果；論文沒有分析
 
 ### 5.2 專家回饋
 
-<center><b>表 3：加一條 hasNoImpact 前後（實驗 3，100 組 × 8 個變數）</b></center>
+<center><b>表 4：加一條 hasNoImpact 前後（實驗 3，100 組 × 8 個變數）</b></center>
 
 | | aSHD 平均 | 標準差 |
 |---|---|---|
