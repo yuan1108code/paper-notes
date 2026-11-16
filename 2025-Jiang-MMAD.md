@@ -13,12 +13,12 @@ papers: ["[[【AnomalyGPT：Detecting Industrial Anomalies Using Large Vision-La
 |---|---|
 | 作者 | Xi Jiang（南方科技大學）、Jian Li、Hanqiu Deng（University of Alberta）、Yong Liu、Bin-Bin Gao、Yifeng Zhou、Jialin Li、Chengjie Wang（騰訊優圖、上海交大）、Feng Zheng（南方科技大學，通訊作者） |
 | 發表 | ICLR 2025。arXiv 2410.09453：v1 2024/10/12，v2 2025/1/7，v3 2025/2/21 |
-| 版本 | 你給的是 ICLR 正式版（23 頁，含附錄）。我比對過：數字和 arXiv v3 完全相同。v1 還沒有 Claude-3.5、人類評估、CoT／拿掉影像／召回率精確率三張表和「GT 轉文字」實驗，這些都是 v2 之後才加的 |
+| 版本 | 本筆記依 ICLR 正式版（23 頁，含附錄），數字和 arXiv v3 完全相同。v1 還沒有 Claude-3.5、人類評估、CoT／拿掉影像／召回率精確率三張表和「GT 轉文字」實驗，這些都是 v2 之後才加的 |
 | 連結 | [ICLR PDF](https://proceedings.iclr.cc/paper_files/paper/2025/file/d91ffbe9c126765755ff52d36b715683-Paper-Conference.pdf)・[arXiv](https://arxiv.org/abs/2410.09453)・[HTML v3](https://arxiv.org/html/2410.09453v3)・[GitHub](https://github.com/jam-cc/MMAD)（約 280 顆星，2026/10 仍在更新） |
 | 動畫解說 | [papers.poyuanchu.com/2025-jiang-mmad/](https://papers.poyuanchu.com/2025-jiang-mmad/) |
 | 論文類型 | 評測基準論文：做一個資料集，測十幾個多模態大型語言模型，再試兩種不用訓練的加強法 |
 | 狀態 | 待讀 |
-| 與我的相關度 | 3 / 5（工業瑕疵不是我的主題，但「用 GPT 從既有標註自動出選擇題、再人工篩」「拿掉影像測題目會不會漏答案」「分開算正常和異常的正確率」這三件事，可以直接用來做災防 RAG 的評測集） |
+| 與我的相關度 | 3 / 5（主題是工業瑕疵檢測；可借用的是「用 GPT 從既有標註自動出選擇題、再人工篩」「拿掉影像測題目會不會漏答案」「分開算正常和異常的正確率」這三件事，可以直接用來做災防 RAG 的評測集） |
 | 加入日期 | 2026-11-13 |
 
 > [!NOTE]
@@ -171,7 +171,7 @@ papers: ["[[【AnomalyGPT：Detecting Industrial Anomalies Using Large Vision-La
 - **平均**：7 個子任務直接平均
 
 > [!TIP]
-> **平衡正確率**是這篇做對的地方。前一篇 AnomalyGPT 用的是一般正確率，凍結的 LLM 每張都答「有異常」就有 72%；在 MMAD 的算法下，全猜同一個答案只會得 50%，所以表上的數字可以直接和 50% 比。
+> **平衡正確率**是這篇做對的地方。[AnomalyGPT](https://hackmd.io/@Yuan1108/HygRJ8ECMx) 用的是一般正確率，凍結的 LLM 每張都答「有異常」就有 72%；在 MMAD 的算法下，全猜同一個答案只會得 50%，所以表上的數字可以直接和 50% 比。
 
 ---
 

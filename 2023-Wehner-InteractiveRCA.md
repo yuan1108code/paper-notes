@@ -13,12 +13,12 @@ papers: ["[[【Triad：Empowering LMM-Based Anomaly Detection with Expert-Guided
 |---|---|
 | 作者 | Christoph Wehner（班貝格大學認知系統組）、Maximilian Kertel（BMW 電池芯技術開發）、Judith Wewerka（BMW 數位化與創新） |
 | 發表 | 2023 IEEE 97th Vehicular Technology Conference（VTC2023-Spring），義大利佛羅倫斯，2023 年 6 月，頁 1–7。DOI [10.1109/VTC2023-Spring57618.2023.10199563](https://doi.org/10.1109/VTC2023-Spring57618.2023.10199563) |
-| 版本 | 你給的 IEEE 連結需要訂閱，我連不進去（IEEE 擋自動存取），所以本筆記依作者放在 arXiv 的版本（2402.00043v1，2024/1/20，7 頁；你後來給的 PDF 和 arXiv v1 逐位元相同）。圖片取自這份 PDF（arXiv 授權 CC BY-NC-ND 4.0），未修改，存放在我的 GitHub 筆記庫。書目資料取自 IEEE 頁面的存檔，標題、作者、摘要和 IEEE 版相同；內文是否和 IEEE 版逐字一樣我無法確認 |
+| 版本 | 本筆記依作者放在 arXiv 的版本（2402.00043v1，2024/1/20，7 頁）。標題、作者、摘要和 IEEE 版相同；IEEE 版全文需訂閱，內文是否逐字相同未核對。圖片取自 arXiv PDF（CC BY-NC-ND 4.0），未修改 |
 | 連結 | [IEEE Xplore](https://ieeexplore.ieee.org/document/10199563)・[arXiv](https://arxiv.org/abs/2402.00043)・[PDF](https://arxiv.org/pdf/2402.00043v1) |
 | 動畫解說 | [papers.poyuanchu.com/2023-wehner-rca/](https://papers.poyuanchu.com/2023-wehner-rca/) |
 | 論文類型 | 系統／應用論文：BMW 電動車產線的根因分析工具，評估很少（三個小實驗，沒有和其他方法比較） |
 | 狀態 | 待讀 |
-| 與我的相關度 | 3 / 5（產線不是我的主題，但「用知識圖譜的先後順序和專家規則，先排除不可能的因果關係，再讓資料學剩下的部分」「專家點一下就把錯的邊加進黑名單、下次重學」這兩個做法，可以借到災害成因分析和災防知識圖譜） |
+| 與我的相關度 | 3 / 5（主題是產線根因分析；可借用的是「用知識圖譜的先後順序和專家規則，先排除不可能的因果關係，再讓資料學剩下的部分」「專家點一下就把錯的邊加進黑名單、下次重學」這兩個做法，可以借到災害成因分析和災防知識圖譜） |
 | 加入日期 | 2026-11-15 |
 
 > [!NOTE]

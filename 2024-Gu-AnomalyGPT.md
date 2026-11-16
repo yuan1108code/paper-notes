@@ -13,12 +13,12 @@ papers: ["[[【MMAD：A Comprehensive Benchmark for Multimodal Large Language Mo
 |---|---|
 | 作者 | Zhaopeng Gu、Bingke Zhu（共同一作）、Guibo Zhu、Yingying Chen（通訊作者）、Ming Tang、Jinqiao Wang；中國科學院自動化研究所、中國科學院大學、Objecteye Inc.（arXiv 版另列武漢人工智慧研究院） |
 | 發表 | AAAI 2024（第 38 屆），Vol. 38 No. 3，頁 1932–1940，DOI [10.1609/aaai.v38i3.27963](https://doi.org/10.1609/aaai.v38i3.27963)。arXiv 2308.15366：v1 2023/8/29，v4 2023/12/28 |
-| 版本 | 你給的是 AAAI 正式版（9 頁，**沒有附錄**）。附錄 A–D（門檻實驗、正常／異常文字、類別描述、更多案例）只在 arXiv 版。我比對過 arXiv v1–v4 與正式版，結果數字完全相同 |
+| 版本 | 本筆記依 AAAI 正式版（9 頁，**沒有附錄**）。附錄 A–D（門檻實驗、正常／異常文字、類別描述、更多案例）只在 arXiv 版。arXiv v1–v4 與正式版的結果數字完全相同 |
 | 連結 | [AAAI](https://ojs.aaai.org/index.php/AAAI/article/view/27963)・[arXiv](https://arxiv.org/abs/2308.15366)・[HTML v4](https://arxiv.org/html/2308.15366v4)・[GitHub](https://github.com/CASIA-IVA-Lab/AnomalyGPT)（約 1,150 顆星，最後更新 2023/12） |
 | 動畫解說 | [papers.poyuanchu.com/2024-gu-anomalygpt/](https://papers.poyuanchu.com/2024-gu-anomalygpt/) |
 | 論文類型 | 方法論文：把大型視覺語言模型（LVLM）改造成工業瑕疵檢測工具 |
 | 狀態 | 待讀 |
-| 與我的相關度 | 2 / 5（工業影像瑕疵檢測不是我的主題；但「把專用模型的輸出變成 LLM 的輸入」「把數值地圖轉成方位文字」「先算全猜同一答案的基準線」三件事可以借到災防系統） |
+| 與我的相關度 | 2 / 5（主題是工業影像瑕疵檢測；可借用的是「把專用模型的輸出變成 LLM 的輸入」「把數值地圖轉成方位文字」「先算全猜同一答案的基準線」三件事可以借到災防系統） |
 | 加入日期 | 2026-11-13 |
 
 > [!NOTE]

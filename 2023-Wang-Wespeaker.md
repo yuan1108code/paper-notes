@@ -38,7 +38,7 @@ papers: ["[[【pyannote.audio 2.1 speaker diarization pipeline：principle, benc
 - 其他：語音辨識的說話者適應、語音合成和變聲時指定「像誰的聲音」
 
 > [!TIP]
-> 上一篇讀的 Powerset 語者分段論文，流程第二步就是「用 ECAPA-TDNN 抽聲紋向量再分群」。Wespeaker 就是專門把這一步做好、做快的工具。
+> [Powerset 語者分段論文](https://hackmd.io/@Yuan1108/H1RfDsbAMe)的流程第二步就是「用 ECAPA-TDNN 抽聲紋向量再分群」。Wespeaker 就是專門把這一步做好、做快的工具。
 
 ### 現有工具的問題
 

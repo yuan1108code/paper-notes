@@ -12,12 +12,12 @@ papers: []
 | 項目 | 內容 |
 |---|---|
 | 作者 | Jichen Feng（Princeton、UPenn）、Yifan Zhang（Princeton）、Chenggong Zhang（UCLA）、Yifu Lu（Princeton），以上四位共同一作；Shilong Liu、Mengdi Wang（通訊作者，Princeton） |
-| 發表 | arXiv 2512.23676 預印本，尚無正式發表。v1 2025/12/29；v2 2026/11/9 只改了排版和一處章節編號（「Section 3」改成「Section 2」），內容相同。本筆記依你給的 v1 |
+| 發表 | arXiv 2512.23676 預印本，尚無正式發表。v1 2025/12/29；v2 2026/11/9 只改了排版和一處章節編號（「Section 3」改成「Section 2」），內容相同。本筆記依 v1 |
 | 連結 | [arXiv](https://arxiv.org/abs/2512.23676)・[PDF](https://arxiv.org/pdf/2512.23676v1)・[HTML v1](https://arxiv.org/html/2512.23676v1)・[專案頁](https://princeton-ai2-lab.github.io/Web-World-Models/)・[GitHub](https://github.com/Princeton-AI2-Lab/Web-World-Models) |
 | 動畫解說 | [papers.poyuanchu.com/2025-feng-wwm/](https://papers.poyuanchu.com/2025-feng-wwm/) |
 | 論文類型 | 立場／系統展示論文：提出一個架構概念，用 7 個網頁示範說明，**沒有任何量化實驗** |
 | 狀態 | 待讀 |
-| 與我的相關度 | 3 / 5（世界模型和遊戲不是我的主題，但「程式算事實、LLM 只負責寫敘述」「LLM 輸出要符合型別」「LLM 掛了要能退回範本」這三個原則，可以直接用在災防資訊系統） |
+| 與我的相關度 | 3 / 5（主題是世界模型和遊戲，和災防系統距離較遠；可借用的是「程式算事實、LLM 只負責寫敘述」「LLM 輸出要符合型別」「LLM 掛了要能退回範本」這三個原則，可以直接用在災防資訊系統） |
 | 加入日期 | 2026-11-12 |
 
 > [!NOTE]

@@ -13,12 +13,12 @@ papers: ["[[【AnomalyGPT：Detecting Industrial Anomalies Using Large Vision-La
 |---|---|
 | 作者 | Yuanze Li、Shihao Yuan（共同一作）、Haolin Wang、Qizhang Li、Ming Liu（通訊作者）、Chen Xu、Guangming Shi、Wangmeng Zuo；哈爾濱工業大學、鵬城實驗室（廣州） |
 | 發表 | ICCV 2025（夏威夷檀香山），頁 21917–21926，DOI [10.1109/ICCV51701.2025.02035](https://doi.org/10.1109/ICCV51701.2025.02035)。arXiv 2503.13184：v1 2025/3/17，v2 2025/8/12 |
-| 版本 | 你給的 IEEE 連結需要訂閱，我改用 CVF 的開放版本（CVF 註明「除浮水印外與接受版相同」，正文 10 頁＋補充材料 7 頁）。我比對過，CVF 版、arXiv v1、v2 的所有百分比數字完全相同；v2 多了附錄的 MMAD 結果。圖片取自 arXiv v2 |
+| 版本 | 本筆記依 CVF 開放版本（CVF 註明「除浮水印外與接受版相同」，正文 10 頁＋補充材料 7 頁）。CVF 版、arXiv v1、v2 的所有百分比數字完全相同；v2 多了附錄的 MMAD 結果。圖片取自 arXiv v2 |
 | 連結 | [IEEE](https://ieeexplore.ieee.org/document/11446142)・[CVF 開放版](https://openaccess.thecvf.com/content/ICCV2025/papers/Li_Triad_Empowering_LMM-based_Anomaly_Detection_with_Expert-guided_Region-of-Interest_Tokenizer_and_ICCV_2025_paper.pdf)・[補充材料](https://openaccess.thecvf.com/content/ICCV2025/supplemental/Li_Triad_Empowering_LMM-based_ICCV_2025_supplemental.pdf)・[arXiv](https://arxiv.org/abs/2503.13184)・[GitHub](https://github.com/tzjtatata/Triad)（約 40 顆星，權重和訓練資料已釋出） |
 | 動畫解說 | [papers.poyuanchu.com/2025-li-triad/](https://papers.poyuanchu.com/2025-li-triad/) |
 | 論文類型 | 方法論文：微調 LLaVA 做工業瑕疵判斷，加入「瑕疵候選區放大」和「製程描述」兩個設計 |
 | 狀態 | 待讀 |
-| 與我的相關度 | 3 / 5（工業瑕疵不是我的主題，但「把專家模型的候選區放大成額外影像 token」和「把領域流程文字當成情境」兩個做法，可以借到災防影像判讀；這篇的評估方式也是很好的反面教材） |
+| 與我的相關度 | 3 / 5（主題是工業瑕疵檢測；可借用的是「把專家模型的候選區放大成額外影像 token」和「把領域流程文字當成情境」兩個做法，可以借到災防影像判讀；這篇的評估方式也是很好的反面教材） |
 | 加入日期 | 2026-11-15 |
 
 > [!NOTE]
@@ -30,10 +30,10 @@ papers: ["[[【AnomalyGPT：Detecting Industrial Anomalies Using Large Vision-La
 
 ### 這篇要解決什麼
 
-前兩篇筆記已經看到兩個問題：
+先前讀的兩篇已經看到兩個問題：
 
-- AnomalyGPT 把熱圖轉成提示向量給 LLM，但判斷力主要來自熱圖，LLM 只多 2–3 個百分點
-- MMAD 的評測顯示，通用 MLLM 認得產品、看不出瑕疵；把專家模型的熱圖畫給 MLLM 看，反而讓判斷變差
+- [AnomalyGPT](https://hackmd.io/@Yuan1108/HygRJ8ECMx) 把熱圖轉成提示向量給 LLM，但判斷力主要來自熱圖，LLM 只多 2–3 個百分點
+- [MMAD](https://hackmd.io/@Yuan1108/ryIMwQDRMe) 的評測顯示，通用 MLLM 認得產品、看不出瑕疵；把專家模型的熱圖畫給 MLLM 看，反而讓判斷變差
 
 作者把通用 LMM 在工業瑕疵上表現差的原因歸成兩點：
 

@@ -12,12 +12,12 @@ papers: ["[[【SAG：SQL-Retrieval Augmented Generation with Query-Time Dynamic 
 | 項目 | 內容 |
 |---|---|
 | 作者 | Weixin Chen（Rutgers、香港浸會大學）、Yuhan Zhao、Jingyuan Huang、Zihe Ye、Clark Mingxuan Ju、Tong Zhao、Neil Shah（Snap Inc.，僅擔任顧問）、Li Chen、Yongfeng Zhang（通訊作者，Rutgers） |
-| 發表 | ACL 2026 Main Conference；arXiv 2601.08816（v1 2026/1/13、v2 2026/1/17、v3 2026/4/28）。本筆記依你給的 v1，v3 新增的實驗另外標註 |
+| 發表 | ACL 2026 Main Conference；arXiv 2601.08816（v1 2026/1/13、v2 2026/1/17、v3 2026/4/28）。本筆記依 v1，v3 新增的實驗另外標註 |
 | 連結 | [arXiv](https://arxiv.org/abs/2601.08816)・[PDF](https://arxiv.org/pdf/2601.08816)・[HTML v1](https://arxiv.org/html/2601.08816v1)・[GitHub](https://github.com/rutgerswiselab/memrec)・[專案頁](https://memrec.weixinchen.com) |
 | 動畫解說 | [papers.poyuanchu.com/2026-chen-memrec/](https://papers.poyuanchu.com/2026-chen-memrec/) |
 | 論文類型 | 方法論文：不需訓練的 LLM 代理人推薦系統架構 |
 | 狀態 | 待讀 |
-| 與我的相關度 | 3 / 5（推薦系統不是我的主題，但「記憶管理和推理拆成兩個模型」「記憶在背景非同步更新」「讓 LLM 先產生篩選規則」這三招可以搬到有長期記憶的 RAG 代理人） |
+| 與我的相關度 | 3 / 5（主題是推薦系統；可借用的是「記憶管理和推理拆成兩個模型」「記憶在背景非同步更新」「讓 LLM 先產生篩選規則」這三招可以搬到有長期記憶的 RAG 代理人） |
 | 加入日期 | 2026-11-12 |
 
 > [!NOTE]
