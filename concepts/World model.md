@@ -2,7 +2,7 @@
 title: "World model"
 tags: [concept, agent]
 aliases: ["世界模型"]
-papers: ["[[【Web World Models】]]"]
+papers: ["[[【Dream-RSI：Recursive Self-Improvement through Evolving Worlds】]]", "[[【Web World Models】]]"]
 related: ["[[Neuro-symbolic AI]]", "[[Procedural generation]]", "[[Agent memory]]"]
 ---
 
@@ -26,8 +26,13 @@ related: ["[[Neuro-symbolic AI]]", "[[Procedural generation]]", "[[Agent memory]
 > [!WARNING]
 > 「世界模型」這個詞被用得很寬：有人指可以拿來規劃的預測模型，有人只是指一個可以互動的生成環境。讀論文時要先確認它指的是哪一種。
 
+## 歷史重播的特例
+Dream-RSI 把已執行的探索樹當 replay world，只揭露已記錄結果，不預測未探索動作。它借用世界模型的「先在環境裡評估策略」想法，但不是學出的生成式 dynamics model。[論文](https://arxiv.org/html/2609.14858v2)
+
 ## 出現在這些論文
 - [[【Web World Models】]]
+
+- [[【Dream-RSI：Recursive Self-Improvement through Evolving Worlds】]]
 
 ## 相關概念
 [[Neuro-symbolic AI]]、[[Procedural generation]]、[[Agent memory]]

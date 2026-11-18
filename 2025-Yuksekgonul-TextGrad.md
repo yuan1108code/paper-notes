@@ -2,7 +2,7 @@
 title: "【Optimizing generative AI by backpropagating language model feedback】"
 tags: [paper, llm, prompt-optimization, compound-ai, status-inbox]
 concepts: ["[[Backpropagation]]", "[[Prompt optimization]]", "[[LLM-as-a-judge]]", "[[Compound AI system]]", "[[Chain-of-thought prompting]]"]
-papers: ["[[【Interleaving Retrieval with Chain-of-Thought Reasoning for Knowledge-Intensive Multi-Step Questions】]]", "[[【PlanRAG：A Plan-then-Retrieval Augmented Generation for Generative Large Language Models as Decision Makers】]]", "[[【MemRec：Collaborative Memory-Augmented Agentic Recommender System】]]", "[[【A Survey on LLM-as-a-Judge】]]"]
+papers: ["[[【Dream-RSI：Recursive Self-Improvement through Evolving Worlds】]]", "[[【Interleaving Retrieval with Chain-of-Thought Reasoning for Knowledge-Intensive Multi-Step Questions】]]", "[[【PlanRAG：A Plan-then-Retrieval Augmented Generation for Generative Large Language Models as Decision Makers】]]", "[[【MemRec：Collaborative Memory-Augmented Agentic Recommender System】]]", "[[【A Survey on LLM-as-a-Judge】]]"]
 ---
 
 # 【Optimizing generative AI by backpropagating language model feedback】
@@ -309,3 +309,5 @@ D95 是「95% 的腫瘤體積至少拿到的劑量」，和目標 70.2 Gy 剛好
 - 相關論文：[[【Interleaving Retrieval with Chain-of-Thought Reasoning for Knowledge-Intensive Multi-Step Questions】]]（多步驟 RAG 系統，可以用 TextGrad 優化它的推理和檢索提示詞）
 - 相關論文：[[【MemRec：Collaborative Memory-Augmented Agentic Recommender System】]]（MemRec：記憶管理與推薦拆成兩個 LLM 角色的複合系統，提示詞與規則可用 TextGrad 優化）
 - 相關論文：[[【A Survey on LLM-as-a-Judge】]]（TextGrad 的「損失」就是 LLM 評審的評語；這篇綜述整理的位置、長度、自我偏好等偏誤，會直接影響優化方向）
+
+- 相關論文：[[【Dream-RSI：Recursive Self-Improvement through Evolving Worlds】]]；[動畫解說](https://papers.poyuanchu.com/2026-zheng-dreamrsi/)（都不改模型權重；Dream-RSI 改探索控制程式並以固定歷史重播評分，非文字梯度傳播）。
