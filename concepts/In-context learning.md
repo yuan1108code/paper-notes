@@ -2,7 +2,7 @@
 title: "In-context learning"
 tags: [concept, llm]
 aliases: ["情境學習", "上下文學習", "few-shot prompting"]
-papers: ["[[【AnomalyGPT：Detecting Industrial Anomalies Using Large Vision-Language Models】]]", "[[【MMAD：A Comprehensive Benchmark for Multimodal Large Language Models in Industrial Anomaly Detection】]]", "[[【Triad：Empowering LMM-Based Anomaly Detection with Expert-Guided Region-of-Interest Tokenizer and Manufacturing Process】]]"]
+papers: ["[[【AnomalyGPT：Detecting Industrial Anomalies Using Large Vision-Language Models】]]", "[[【MMAD：A Comprehensive Benchmark for Multimodal Large Language Models in Industrial Anomaly Detection】]]", "[[【Triad：Empowering LMM-Based Anomaly Detection with Expert-Guided Region-of-Interest Tokenizer and Manufacturing Process】]]", "[[【LLM-SR：Scientific Equation Discovery via Programming with Large Language Models】]]"]
 related: ["[[Prompt tuning]]", "[[Vision-language model]]"]
 ---
 
@@ -24,6 +24,8 @@ GPT-3 之後大家發現，大型語言模型只要在提示裡看幾個「輸�
 - [[【AnomalyGPT：Detecting Industrial Anomalies Using Large Vision-Language Models】]]
 - [[【MMAD：A Comprehensive Benchmark for Multimodal Large Language Models in Industrial Anomaly Detection】]]
 - [[【Triad：Empowering LMM-Based Anomaly Detection with Expert-Guided Region-of-Interest Tokenizer and Manufacturing Process】]]
+
+- [[【LLM-SR：Scientific Equation Discovery via Programming with Large Language Models】]]：由多島經驗庫抽取已評估骨架作為提示例子，LLM 權重不更新。
 
 ## 相關概念
 [[Prompt tuning]]、[[Vision-language model]]

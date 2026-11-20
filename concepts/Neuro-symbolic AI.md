@@ -2,7 +2,7 @@
 title: "Neuro-symbolic AI"
 tags: [concept, ai]
 aliases: ["神經符號 AI", "神經–符號混合"]
-papers: ["[[【Web World Models】]]"]
+papers: ["[[【Web World Models】]]", "[[【LLM-SR：Scientific Equation Discovery via Programming with Large Language Models】]]"]
 related: ["[[World model]]", "[[Constrained decoding]]", "[[Procedural generation]]"]
 ---
 
@@ -27,6 +27,8 @@ LLM 會寫故事、懂語意，但算錯數字、前後矛盾；程式和規則�
 
 ## 出現在這些論文
 - [[【Web World Models】]]
+
+- [[【LLM-SR：Scientific Equation Discovery via Programming with Large Language Models】]]：LLM 提案符號／程式結構，數值優化擬合係數，再用觀測誤差篩選。
 
 ## 相關概念
 [[World model]]、[[Constrained decoding]]、[[Procedural generation]]
