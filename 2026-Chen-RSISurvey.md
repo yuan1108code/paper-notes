@@ -2,7 +2,7 @@
 title: "【Recursive Self-Improvement in AI：From Bounded Self-Refinement to Autonomous Research Loops】"
 tags: [paper, artificial-intelligence, recursive-self-improvement, agents, survey, status-inbox]
 concepts: ["[[Recursive self-improvement]]", "[[Test-time training]]", "[[LLM-as-a-judge]]", "[[Reward model]]", "[[Agent memory]]"]
-papers: ["[[【Dream-RSI：Recursive Self-Improvement through Evolving Worlds】]]", "[[【Optimizing generative AI by backpropagating language model feedback】]]", "[[【LLM-SR：Scientific Equation Discovery via Programming with Large Language Models】]]", "[[【Self-Taught Optimizer (STOP)：Recursively Self-Improving Code Generation】]]"]
+papers: ["[[【Dream-RSI：Recursive Self-Improvement through Evolving Worlds】]]", "[[【Optimizing generative AI by backpropagating language model feedback】]]", "[[【LLM-SR：Scientific Equation Discovery via Programming with Large Language Models】]]", "[[【Self-Taught Optimizer (STOP)：Recursively Self-Improving Code Generation】]]", "[[【Darwin Gödel Machine：Open-Ended Evolution of Self-Improving Agents】]]"]
 arxiv: "2607.07663v2"
 ---
 
@@ -399,3 +399,7 @@ A-Evolve-Training 特別值得注意：調查記錄它察覺開發指標與外�
 - 延伸閱讀主題：具執行回饋的自我修復、流程獎勵模型、評估器共同演化、可信技能累積、研究產物與主張層級稽核。
 
 本文沒有將相關研究的全文閱讀或重現狀態混同於本調查的完整閱讀；數字審核以本調查與公開凍結語料為界。
+
+### 相關論文：DGM
+
+- [[【Darwin Gödel Machine：Open-Ended Evolution of Self-Improving Agents】]]：對照累積版本 archive、改進者本身的演化，以及固定外部評估與安全邊界。

@@ -2,7 +2,7 @@
 title: "Meta-optimization"
 tags: [concept, optimization, agents]
 aliases: ["元優化", "後設最佳化", "優化優化器"]
-papers: ["[[【Self-Taught Optimizer (STOP)：Recursively Self-Improving Code Generation】]]", "[[【Dream-RSI：Recursive Self-Improvement through Evolving Worlds】]]"]
+papers: ["[[【Self-Taught Optimizer (STOP)：Recursively Self-Improving Code Generation】]]", "[[【Dream-RSI：Recursive Self-Improvement through Evolving Worlds】]]", "[[【Darwin Gödel Machine：Open-Ended Evolution of Self-Improving Agents】]]"]
 related: ["[[Recursive self-improvement]]", "[[Evolutionary program search]]"]
 ---
 
@@ -42,7 +42,13 @@ Dream-RSI 將「決定走哪條探索分支、並行多少、何時停止」的�
 - 固定比較預算，保留舊策略作對照；對外層開發未用過的資料再驗收。
 - 讓安全與評測邊界位於可自改的程式之外，避免優化器只是移除限制而拿高分。
 
+
+## DGM 的對照
+
+DGM 把可改進的 coding agent 作為下一輪修改者，但 archive 與 parent-selection 控制器仍固定；不能把 agent 效能提升說成搜尋控制器也被優化。（DGM v3 §3、附錄 C.2、H；https://arxiv.org/html/2505.22954v3 ）
+
 ## 出現在這些論文
+- [[【Darwin Gödel Machine：Open-Ended Evolution of Self-Improving Agents】]]：DGM 把可改進的 coding agent 作為下一輪修改者，但 archive 與 parent-selection 控制器仍固定；不能把 agent 效能提升說成搜尋控制器也被優化。
 
 - [[【Self-Taught Optimizer (STOP)：Recursively Self-Improving Code Generation】]]
 - [[【Dream-RSI：Recursive Self-Improvement through Evolving Worlds】]]

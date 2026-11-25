@@ -2,7 +2,7 @@
 title: "【Dream-RSI：Recursive Self-Improvement through Evolving Worlds】"
 tags: [paper, agent, recursive-self-improvement, exploration, status-inbox]
 concepts: ["[[World model]]", "[[Replay simulator]]", "[[Pareto hypervolume]]", "[[Recursive self-improvement]]", "[[Meta-optimization]]"]
-papers: ["[[【Optimizing generative AI by backpropagating language model feedback】]]", "[[【LLM-SR：Scientific Equation Discovery via Programming with Large Language Models】]]", "[[【Recursive Self-Improvement in AI：From Bounded Self-Refinement to Autonomous Research Loops】]]", "[[【Self-Taught Optimizer (STOP)：Recursively Self-Improving Code Generation】]]"]
+papers: ["[[【Optimizing generative AI by backpropagating language model feedback】]]", "[[【LLM-SR：Scientific Equation Discovery via Programming with Large Language Models】]]", "[[【Recursive Self-Improvement in AI：From Bounded Self-Refinement to Autonomous Research Loops】]]", "[[【Self-Taught Optimizer (STOP)：Recursively Self-Improving Code Generation】]]", "[[【Darwin Gödel Machine：Open-Ended Evolution of Self-Improving Agents】]]"]
 ---
 
 # 【Dream-RSI：Recursive Self-Improvement through Evolving Worlds】
@@ -313,3 +313,7 @@ Sum–Difference 比固定策略高 0.001380（約 0.1206%），Circle Packing �
 ### 延伸閱讀：方程式搜尋
 
 - [[【LLM-SR：Scientific Equation Discovery via Programming with Large Language Models】]]：同樣結合固定 LLM 與外部回饋；LLM-SR 改方程式骨架並擬合數值係數，不是改提示文字或探索控制器。
+
+### 相關論文：DGM
+
+- [[【Darwin Gödel Machine：Open-Ended Evolution of Self-Improving Agents】]]：對照累積版本 archive、改進者本身的演化，以及固定外部評估與安全邊界。

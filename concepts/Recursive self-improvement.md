@@ -2,7 +2,7 @@
 title: "Recursive self-improvement"
 tags: [concept, llm, self-improvement]
 aliases: ["遞迴自我改良", "RSI", "遞迴自我改善"]
-papers: ["[[【Recursive Self-Improvement in AI：From Bounded Self-Refinement to Autonomous Research Loops】]]", "[[【Dream-RSI：Recursive Self-Improvement through Evolving Worlds】]]", "[[【Self-Taught Optimizer (STOP)：Recursively Self-Improving Code Generation】]]"]
+papers: ["[[【Recursive Self-Improvement in AI：From Bounded Self-Refinement to Autonomous Research Loops】]]", "[[【Dream-RSI：Recursive Self-Improvement through Evolving Worlds】]]", "[[【Self-Taught Optimizer (STOP)：Recursively Self-Improving Code Generation】]]", "[[【Darwin Gödel Machine：Open-Ended Evolution of Self-Improving Agents】]]"]
 related: ["[[Agent memory]]", "[[LLM-as-a-judge]]", "[[Reward model]]", "[[Test-time training]]"]
 ---
 
@@ -37,7 +37,13 @@ RSI 綜述把有邊界的自我修正與更強的自主研究迴圈放在同一�
 > [!WARNING]
 > 「遞迴」描述回饋結構，不是效能承諾。固定預算、狹窄環境中的改善，不能直接外推成開放世界自主研究能力。
 
+
+## DGM 的對照
+
+DGM 保存可繼續修改自己的 agent 版本。固定 FM 權重、固定外部搜尋控制下，暫時退步的版本仍可成為跳板；附錄的 logging-marker hacking 也說明評分紀錄須在可改程式之外。（DGM v3 §3、附錄 C.2、H；https://arxiv.org/html/2505.22954v3 ）
+
 ## 出現在這些論文
+- [[【Darwin Gödel Machine：Open-Ended Evolution of Self-Improving Agents】]]：DGM 保存可繼續修改自己的 agent 版本。固定 FM 權重、固定外部搜尋控制下，暫時退步的版本仍可成為跳板；附錄的 logging-marker hacking 也說明評分紀錄須在可改程式之外。
 - [[【Self-Taught Optimizer (STOP)：Recursively Self-Improving Code Generation】]]：用固定語言模型改寫改良器程式，並以改良下游程式的效用作外層評分。
 
 - [[【Recursive Self-Improvement in AI：From Bounded Self-Refinement to Autonomous Research Loops】]]：以改變位置與人類參與程度整理文獻，並討論驗證、崩塌、研究方向與安全限制。

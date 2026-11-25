@@ -2,7 +2,7 @@
 title: "Evolutionary program search"
 tags: [concept, program-search, optimization]
 aliases: [進化式程式搜尋, 演化程式搜尋]
-papers: ["[[【LLM-SR：Scientific Equation Discovery via Programming with Large Language Models】]]", "[[【Dream-RSI：Recursive Self-Improvement through Evolving Worlds】]]", "[[【Self-Taught Optimizer (STOP)：Recursively Self-Improving Code Generation】]]"]
+papers: ["[[【LLM-SR：Scientific Equation Discovery via Programming with Large Language Models】]]", "[[【Dream-RSI：Recursive Self-Improvement through Evolving Worlds】]]", "[[【Self-Taught Optimizer (STOP)：Recursively Self-Improving Code Generation】]]", "[[【Darwin Gödel Machine：Open-Ended Evolution of Self-Improving Agents】]]"]
 related: ["[[Symbolic regression]]", "[[In-context learning]]"]
 ---
 
@@ -32,7 +32,13 @@ related: ["[[Symbolic regression]]", "[[In-context learning]]"]
 > [!WARNING]
 > 執行候選不等於安全：timeout 不會自動封鎖網路、檔案存取或記憶體濫用。還要防止評估器漏洞、反覆使用同一驗證集的過擬合，以及把不同方法的 iteration 當成等價總成本。[3]
 
+
+## DGM 的對照
+
+DGM 用成功率 sigmoid 與有效 children 數的倒數抽 parent，保留有編輯能力但不一定高於 parent 的版本；這是譜系探索偏好，不等於量測了行為新奇度。（DGM v3 §3、附錄 C.2、H；https://arxiv.org/html/2505.22954v3 ）
+
 ## 出現在這些論文
+- [[【Darwin Gödel Machine：Open-Ended Evolution of Self-Improving Agents】]]：DGM 用成功率 sigmoid 與有效 children 數的倒數抽 parent，保留有編輯能力但不一定高於 parent 的版本；這是譜系探索偏好，不等於量測了行為新奇度。
 - [[【Self-Taught Optimizer (STOP)：Recursively Self-Improving Code Generation】]]：用固定語言模型改寫改良器程式，並以改良下游程式的效用作外層評分。
 
 - [[【LLM-SR：Scientific Equation Discovery via Programming with Large Language Models】]]：搜尋方程式骨架，數值優化擬合係數。
