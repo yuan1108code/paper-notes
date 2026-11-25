@@ -17,6 +17,7 @@ papers: ["[[【Self-Taught Optimizer (STOP)：Recursively Self-Improving Code Ge
 | 版本／會議 | 本筆記依 arXiv:2505.22954v3（2026-03-12），PDF 標示 ICLR 2026 conference paper；arXiv 初版於 2025-05-29，不能把 2026 說成首次公開年份 |
 | 連結 | [arXiv 摘要與版本史](https://arxiv.org/abs/2505.22954) ／ [v3 全文](https://arxiv.org/html/2505.22954v3) ／ [官方程式與結果入口](https://github.com/jennyzzt/dgm) |
 | 引用（IEEE） | J. Zhang, S. Hu, C. Lu, R. Lange, and J. Clune, “Darwin Gödel Machine: Open-ended evolution of self-improving agents,” *Proc. Int. Conf. Learn. Represent. (ICLR)*, 2026, arXiv:2505.22954v3. |
+| 動畫解說 | [papers.poyuanchu.com/2026-zhang-dgm/](https://papers.poyuanchu.com/2026-zhang-dgm/) |
 | 研究類型 | 固定基礎模型下，自動搜尋／演化 coding agent 程式與工作流程的實證研究 |
 | 開放與授權 | 圖 1–4 取自 Zhang 等人的 v3 原文（2026），直接連結原始 arXiv 圖檔；arXiv 全文採 CC BY 4.0；官方程式庫採 Apache 2.0。兩者是不同授權對象，不應互換 |
 | 閱讀與稽核 | 已讀完整 72 頁、參考文獻及附錄 A–J；另靜態解析官方程式與公開實驗中繼資料，不執行生成 agent。程式固定於 commit a565fd2d1dca504ef5104a7cc0f3bdc4ab9b4fd2 |

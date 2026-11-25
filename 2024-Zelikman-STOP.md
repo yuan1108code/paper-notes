@@ -18,6 +18,7 @@ papers: ["[[【Recursive Self-Improvement in AI：From Bounded Self-Refinement t
 | 版本與時間 | 初次提交 2023-10-03；本筆記依 arXiv:2310.02304v3，修訂日期 2024-08-16。共 46 頁，含完整附錄 A–N；會議年份與預印本初次年份分開記錄。[1][2] |
 | 連結 | [arXiv 摘要](https://arxiv.org/abs/2310.02304) · [v3 PDF](https://arxiv.org/pdf/2310.02304v3) · [官方程式碼](https://github.com/microsoft/stop) |
 | 引用（IEEE） | E. Zelikman, E. Lorch, L. Mackey, and A. T. Kalai, “Self-taught optimizer (STOP): Recursively self-improving code generation,” in *Proc. Conf. Language Modeling (COLM)*, 2024. [Online]. Available: https://arxiv.org/abs/2310.02304.（作者名採 arXiv 引用 metadata；未取得正式論文集頁碼、出版地或出版 DOI，因此不補造；arXiv 預印本識別碼不冒充會議 DOI。） |
+| 動畫解說 | [papers.poyuanchu.com/2024-zelikman-stop/](https://papers.poyuanchu.com/2024-zelikman-stop/) |
 | 問題類型 | 固定語言模型之下，自動搜尋更好的程式生成／改寫流程；不是更新模型權重。 |
 | 實際閱讀材料 | PDF 全文與 A–N 附錄、arXiv source archive 的 main.tex 與檔案清單，以及官方 repository 全部 31 份 Python 檔的靜態文字／AST 檢查。未執行作者的 evaluator、生成程式或 API 呼叫。[1][2][3] |
 | 程式版本 | 官方 repository 淺層 clone 的 commit `0d6780c54306b2486dd36e9c4ae9b49aceb27ea4`；這是本次核對的版本，不宣稱與 2024 實驗當時完全相同。[3] |
