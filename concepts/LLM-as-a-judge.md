@@ -2,7 +2,7 @@
 title: "LLM-as-a-judge"
 tags: [concept, llm]
 aliases: ["LLM 當評審", "LLM 評審"]
-papers: ["[[【Optimizing generative AI by backpropagating language model feedback】]]", "[[【Only Ask What You Don't Know：Grounded Delta Planning for Efficient Multi-step RAG】]]", "[[【SAG：SQL-Retrieval Augmented Generation with Query-Time Dynamic Hyperedges】]]", "[[【MemRec：Collaborative Memory-Augmented Agentic Recommender System】]]", "[[【A Survey on LLM-as-a-Judge】]]"]
+papers: ["[[【Optimizing generative AI by backpropagating language model feedback】]]", "[[【Only Ask What You Don't Know：Grounded Delta Planning for Efficient Multi-step RAG】]]", "[[【SAG：SQL-Retrieval Augmented Generation with Query-Time Dynamic Hyperedges】]]", "[[【MemRec：Collaborative Memory-Augmented Agentic Recommender System】]]", "[[【A Survey on LLM-as-a-Judge】]]", "[[【Recursive Self-Improvement in AI：From Bounded Self-Refinement to Autonomous Research Loops】]]"]
 related: ["[[Prompt optimization]]", "[[Compound AI system]]", "[[Meta-evaluation]]", "[[Position bias]]", "[[Majority voting]]", "[[Reward model]]", "[[Constrained decoding]]"]
 ---
 
@@ -31,6 +31,7 @@ related: ["[[Prompt optimization]]", "[[Compound AI system]]", "[[Meta-evaluatio
 Zheng et al., *Judging LLM-as-a-judge with MT-Bench and Chatbot Arena*, NeurIPS 2023；綜述見 Gu et al., *A Survey on LLM-as-a-Judge*（arXiv 2411.15594）
 
 ## 出現在這些論文
+- [[【Recursive Self-Improvement in AI：From Bounded Self-Refinement to Autonomous Research Loops】]]：討論自我改進迴圈中，訊號可靠性、跨任務持續性與共享錯誤的風險。
 - [[【Optimizing generative AI by backpropagating language model feedback】]]
 - [[【Only Ask What You Don't Know：Grounded Delta Planning for Efficient Multi-step RAG】]]
 - [[【SAG：SQL-Retrieval Augmented Generation with Query-Time Dynamic Hyperedges】]]

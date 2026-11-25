@@ -2,7 +2,7 @@
 title: "【LLM-SR：Scientific Equation Discovery via Programming with Large Language Models】"
 tags: [paper, symbolic-regression, scientific-discovery, llm, status-inbox]
 concepts: ["[[Symbolic regression]]", "[[Evolutionary program search]]", "[[In-context learning]]", "[[Neuro-symbolic AI]]"]
-papers: ["[[【Optimizing generative AI by backpropagating language model feedback】]]", "[[【Dream-RSI：Recursive Self-Improvement through Evolving Worlds】]]"]
+papers: ["[[【Optimizing generative AI by backpropagating language model feedback】]]", "[[【Dream-RSI：Recursive Self-Improvement through Evolving Worlds】]]", "[[【Recursive Self-Improvement in AI：From Bounded Self-Refinement to Autonomous Research Loops】]]"]
 ---
 
 # 【LLM-SR：Scientific Equation Discovery via Programming with Large Language Models】
@@ -575,6 +575,7 @@ LLM-SR 的貢獻是把領域語意、可執行結構、連續係數優化及進�
 5. 資料只含有限軌跡時，如何避免可解釋但錯誤的因果／物理敘述？
 
 ### 相關
+- 綜述：[[【Recursive Self-Improvement in AI：From Bounded Self-Refinement to Autonomous Research Loops】]]（依改進對象、驗證訊號與人工參與程度整理自我改進研究）。
 
 - [[Symbolic regression|符號迴歸]]：同時找結構與數值係數。
 - [[Evolutionary program search|進化式程式搜尋]]：以可執行評估推動候選族群更新。

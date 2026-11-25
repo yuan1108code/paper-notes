@@ -2,7 +2,7 @@
 title: "Reward model"
 tags: [concept, llm]
 aliases: ["獎勵模型", "過程獎勵模型", "PRM"]
-papers: ["[[【A Survey on LLM-as-a-Judge】]]"]
+papers: ["[[【A Survey on LLM-as-a-Judge】]]", "[[【Recursive Self-Improvement in AI：From Bounded Self-Refinement to Autonomous Research Loops】]]"]
 related: ["[[LLM-as-a-judge]]", "[[Majority voting]]"]
 ---
 
@@ -27,6 +27,7 @@ LLM 評審可以直接當獎勵模型（不用另外訓練），也可以用它�
 > 獎勵模型會被「鑽漏洞」（reward hacking）：被訓練的模型學會討好評審的表面特徵（例如寫長一點），而不是真的變好。這也是 DeepSeek-R1 在推理任務改用規則式獎勵的原因之一。
 
 ## 出現在這些論文
+- [[【Recursive Self-Improvement in AI：From Bounded Self-Refinement to Autonomous Research Loops】]]：討論自我改進迴圈中，訊號可靠性、跨任務持續性與共享錯誤的風險。
 - [[【A Survey on LLM-as-a-Judge】]]
 
 ## 相關概念

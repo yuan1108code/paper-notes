@@ -2,7 +2,7 @@
 title: "Agent memory"
 tags: [concept, llm]
 aliases: ["代理人記憶", "LLM 記憶", "長期記憶"]
-papers: ["[[【MemRec：Collaborative Memory-Augmented Agentic Recommender System】]]", "[[【Web World Models】]]"]
+papers: ["[[【MemRec：Collaborative Memory-Augmented Agentic Recommender System】]]", "[[【Web World Models】]]", "[[【Recursive Self-Improvement in AI：From Bounded Self-Refinement to Autonomous Research Loops】]]"]
 related: ["[[Retrieval-augmented generation]]", "[[Compound AI system]]", "[[Collaborative filtering]]"]
 ---
 
@@ -29,6 +29,7 @@ LLM 本身每次對話都從零開始。要讓代理人「越用越懂你」，�
 - **風險**：記憶寫錯會一直留著，協同式更新還會把錯誤擴散給別人
 
 ## 出現在這些論文
+- [[【Recursive Self-Improvement in AI：From Bounded Self-Refinement to Autonomous Research Loops】]]：討論自我改進迴圈中，訊號可靠性、跨任務持續性與共享錯誤的風險。
 - [[【MemRec：Collaborative Memory-Augmented Agentic Recommender System】]]
 - [[【Web World Models】]]
 

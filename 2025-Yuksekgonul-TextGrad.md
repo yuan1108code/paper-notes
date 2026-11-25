@@ -2,7 +2,7 @@
 title: "【Optimizing generative AI by backpropagating language model feedback】"
 tags: [paper, llm, prompt-optimization, compound-ai, status-inbox]
 concepts: ["[[Backpropagation]]", "[[Prompt optimization]]", "[[LLM-as-a-judge]]", "[[Compound AI system]]", "[[Chain-of-thought prompting]]"]
-papers: ["[[【Dream-RSI：Recursive Self-Improvement through Evolving Worlds】]]", "[[【Interleaving Retrieval with Chain-of-Thought Reasoning for Knowledge-Intensive Multi-Step Questions】]]", "[[【PlanRAG：A Plan-then-Retrieval Augmented Generation for Generative Large Language Models as Decision Makers】]]", "[[【MemRec：Collaborative Memory-Augmented Agentic Recommender System】]]", "[[【A Survey on LLM-as-a-Judge】]]", "[[【LLM-SR：Scientific Equation Discovery via Programming with Large Language Models】]]"]
+papers: ["[[【Dream-RSI：Recursive Self-Improvement through Evolving Worlds】]]", "[[【Interleaving Retrieval with Chain-of-Thought Reasoning for Knowledge-Intensive Multi-Step Questions】]]", "[[【PlanRAG：A Plan-then-Retrieval Augmented Generation for Generative Large Language Models as Decision Makers】]]", "[[【MemRec：Collaborative Memory-Augmented Agentic Recommender System】]]", "[[【A Survey on LLM-as-a-Judge】]]", "[[【LLM-SR：Scientific Equation Discovery via Programming with Large Language Models】]]", "[[【Recursive Self-Improvement in AI：From Bounded Self-Refinement to Autonomous Research Loops】]]"]
 ---
 
 # 【Optimizing generative AI by backpropagating language model feedback】
@@ -301,6 +301,7 @@ D95 是「95% 的腫瘤體積至少拿到的劑量」，和目標 70.2 Gy 剛好
 > 每一輪要多呼叫幾次 LLM？和 DSPy 比，實際花費差多少？評審 LLM 自己有偏誤時，會不會把系統帶歪？
 
 ### 相關
+- 綜述：[[【Recursive Self-Improvement in AI：From Bounded Self-Refinement to Autonomous Research Loops】]]（依改進對象、驗證訊號與人工參與程度整理自我改進研究）。
 - 概念：[[Backpropagation|反向傳播]]、[[Prompt optimization|提示詞優化]]、[[LLM-as-a-judge|LLM 當評審]]、[[Compound AI system|複合 AI 系統]]、[[Chain-of-thought prompting|思維鏈提示]]
 - 對照方法：DSPy（Khattab et al., ICLR 2024）、OPRO（Yang et al., ICLR 2024）、Reflexion（Shinn et al., NeurIPS 2023）、Self-Refine（Madaan et al., NeurIPS 2023）
 - 「文字梯度」一詞來源：Pryzant et al., *Automatic prompt optimization with "gradient descent" and beam search*, EMNLP 2023
