@@ -1,8 +1,8 @@
 ---
 title: "【Dream-RSI：Recursive Self-Improvement through Evolving Worlds】"
 tags: [paper, agent, recursive-self-improvement, exploration, status-inbox]
-concepts: ["[[World model]]", "[[Replay simulator]]", "[[Pareto hypervolume]]", "[[Recursive self-improvement]]"]
-papers: ["[[【Optimizing generative AI by backpropagating language model feedback】]]", "[[【LLM-SR：Scientific Equation Discovery via Programming with Large Language Models】]]", "[[【Recursive Self-Improvement in AI：From Bounded Self-Refinement to Autonomous Research Loops】]]"]
+concepts: ["[[World model]]", "[[Replay simulator]]", "[[Pareto hypervolume]]", "[[Recursive self-improvement]]", "[[Meta-optimization]]"]
+papers: ["[[【Optimizing generative AI by backpropagating language model feedback】]]", "[[【LLM-SR：Scientific Equation Discovery via Programming with Large Language Models】]]", "[[【Recursive Self-Improvement in AI：From Bounded Self-Refinement to Autonomous Research Loops】]]", "[[【Self-Taught Optimizer (STOP)：Recursively Self-Improving Code Generation】]]"]
 ---
 
 # 【Dream-RSI：Recursive Self-Improvement through Evolving Worlds】
@@ -296,6 +296,7 @@ Sum–Difference 比固定策略高 0.001380（約 0.1206%），Circle Packing �
 > 以新世界作為 held-out policy-selection set，重播分數與下一輪線上收益有多高相關？計入 dreaming 的模型成本後，節省是否仍成立？若模型、提示詞、工具或資料分布改變，過去世界應如何降權？prefix-only 限制除了提示詞規範之外，有沒有足夠的 sandbox／資訊隔離？
 
 ### 相關
+- 方法：[[【Self-Taught Optimizer (STOP)：Recursively Self-Improving Code Generation】]]（COLM 2024；改的是呼叫模型的改良器程式，不是模型權重）。
 - 綜述：[[【Recursive Self-Improvement in AI：From Bounded Self-Refinement to Autonomous Research Loops】]]（依改進對象、驗證訊號與人工參與程度整理自我改進研究）。
 - 概念：[[World model|世界模型]]、[[Replay simulator|歷史重播模擬器]]、[[Pareto hypervolume|Pareto 超體積]]。
 - 相關論文：[[【Optimizing generative AI by backpropagating language model feedback】]]；[完整筆記／動畫入口](https://papers.poyuanchu.com/2025-yuksekgonul-textgrad/)。

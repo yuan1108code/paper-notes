@@ -2,7 +2,7 @@
 title: "Recursive self-improvement"
 tags: [concept, llm, self-improvement]
 aliases: ["遞迴自我改良", "RSI", "遞迴自我改善"]
-papers: ["[[【Recursive Self-Improvement in AI：From Bounded Self-Refinement to Autonomous Research Loops】]]", "[[【Dream-RSI：Recursive Self-Improvement through Evolving Worlds】]]"]
+papers: ["[[【Recursive Self-Improvement in AI：From Bounded Self-Refinement to Autonomous Research Loops】]]", "[[【Dream-RSI：Recursive Self-Improvement through Evolving Worlds】]]", "[[【Self-Taught Optimizer (STOP)：Recursively Self-Improving Code Generation】]]"]
 related: ["[[Agent memory]]", "[[LLM-as-a-judge]]", "[[Reward model]]", "[[Test-time training]]"]
 ---
 
@@ -38,6 +38,7 @@ RSI 綜述把有邊界的自我修正與更強的自主研究迴圈放在同一�
 > 「遞迴」描述回饋結構，不是效能承諾。固定預算、狹窄環境中的改善，不能直接外推成開放世界自主研究能力。
 
 ## 出現在這些論文
+- [[【Self-Taught Optimizer (STOP)：Recursively Self-Improving Code Generation】]]：用固定語言模型改寫改良器程式，並以改良下游程式的效用作外層評分。
 
 - [[【Recursive Self-Improvement in AI：From Bounded Self-Refinement to Autonomous Research Loops】]]：以改變位置與人類參與程度整理文獻，並討論驗證、崩塌、研究方向與安全限制。
 - [[【Dream-RSI：Recursive Self-Improvement through Evolving Worlds】]]：在固定探索歷史上比較控制程式，再回真實探索驗證；改的是控制策略，不是 LLM 權重。

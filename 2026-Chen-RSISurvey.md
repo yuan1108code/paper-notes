@@ -2,7 +2,7 @@
 title: "【Recursive Self-Improvement in AI：From Bounded Self-Refinement to Autonomous Research Loops】"
 tags: [paper, artificial-intelligence, recursive-self-improvement, agents, survey, status-inbox]
 concepts: ["[[Recursive self-improvement]]", "[[Test-time training]]", "[[LLM-as-a-judge]]", "[[Reward model]]", "[[Agent memory]]"]
-papers: ["[[【Dream-RSI：Recursive Self-Improvement through Evolving Worlds】]]", "[[【Optimizing generative AI by backpropagating language model feedback】]]", "[[【LLM-SR：Scientific Equation Discovery via Programming with Large Language Models】]]"]
+papers: ["[[【Dream-RSI：Recursive Self-Improvement through Evolving Worlds】]]", "[[【Optimizing generative AI by backpropagating language model feedback】]]", "[[【LLM-SR：Scientific Equation Discovery via Programming with Large Language Models】]]", "[[【Self-Taught Optimizer (STOP)：Recursively Self-Improving Code Generation】]]"]
 arxiv: "2607.07663v2"
 ---
 
@@ -389,6 +389,7 @@ A-Evolve-Training 特別值得注意：調查記錄它察覺開發指標與外�
 7. 治理級量測如何證明系統沒有越過某個自我改進門檻，而不只是對外提供選擇性報告？
 
 ### 相關
+- 方法：[[【Self-Taught Optimizer (STOP)：Recursively Self-Improving Code Generation】]]（COLM 2024；改的是呼叫模型的改良器程式，不是模型權重）。
 
 - 概念：[[Recursive self-improvement]]、[[Test-time training]]、[[LLM-as-a-judge]]、[[Reward model]]、[[Agent memory]]
 - 相關筆記：[[【Dream-RSI：Recursive Self-Improvement through Evolving Worlds】]]、[[【Optimizing generative AI by backpropagating language model feedback】]]、[[【LLM-SR：Scientific Equation Discovery via Programming with Large Language Models】]]

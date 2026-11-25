@@ -2,7 +2,7 @@
 title: "Evolutionary program search"
 tags: [concept, program-search, optimization]
 aliases: [進化式程式搜尋, 演化程式搜尋]
-papers: ["[[【LLM-SR：Scientific Equation Discovery via Programming with Large Language Models】]]", "[[【Dream-RSI：Recursive Self-Improvement through Evolving Worlds】]]"]
+papers: ["[[【LLM-SR：Scientific Equation Discovery via Programming with Large Language Models】]]", "[[【Dream-RSI：Recursive Self-Improvement through Evolving Worlds】]]", "[[【Self-Taught Optimizer (STOP)：Recursively Self-Improving Code Generation】]]"]
 related: ["[[Symbolic regression]]", "[[In-context learning]]"]
 ---
 
@@ -33,6 +33,7 @@ related: ["[[Symbolic regression]]", "[[In-context learning]]"]
 > 執行候選不等於安全：timeout 不會自動封鎖網路、檔案存取或記憶體濫用。還要防止評估器漏洞、反覆使用同一驗證集的過擬合，以及把不同方法的 iteration 當成等價總成本。[3]
 
 ## 出現在這些論文
+- [[【Self-Taught Optimizer (STOP)：Recursively Self-Improving Code Generation】]]：用固定語言模型改寫改良器程式，並以改良下游程式的效用作外層評分。
 
 - [[【LLM-SR：Scientific Equation Discovery via Programming with Large Language Models】]]：搜尋方程式骨架，數值優化擬合係數。
 - [[【Dream-RSI：Recursive Self-Improvement through Evolving Worlds】]]：搜尋探索控制程式，以歷史重播評估；優化對象與 LLM-SR 不同，並非同方法。
