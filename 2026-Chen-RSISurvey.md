@@ -19,6 +19,7 @@ arxiv: "2607.07663v2"
 | 連結 | [摘要與版本歷史](https://arxiv.org/abs/2607.07663)／[v2 PDF](https://arxiv.org/pdf/2607.07663v2)／[v2 HTML](https://arxiv.org/html/2607.07663v2)／[公開語料與程式](https://github.com/deepgrounding/recursive-self-improvement) |
 | 引用（IEEE） | M. Chen, L. Wang, and B. Qu, “Recursive self-improvement in AI: From bounded self-refinement to autonomous research loops,” 2026, *arXiv:2607.07663*, ver. 2. |
 | 論文類型 | 文獻調查、分類框架與批判性綜合；不是提出一個新模型後進行訓練的實驗論文 |
+| 動畫解說 | [papers.poyuanchu.com/2026-chen-rsi-survey/](https://papers.poyuanchu.com/2026-chen-rsi-survey/) |
 | 閱讀範圍 | v2 全文 44 頁，含第 1–9 節、Data availability 與全部 196 筆參考文獻；本版本沒有獨立標為 Appendix 的附錄 |
 | 語料範圍 | 2024–2026 年 arXiv 文獻樣本，共 1,250 篇；凍結 CSV 的發表日期最晚為 2026-07-06，不能視為涵蓋到 9 月修訂日的普查 |
 | 數字核對 | 另外下載公開凍結語料，以 Python 重算分類、來源、年度與季度統計；未逐篇重現被引研究的實驗 |
