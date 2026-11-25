@@ -2,7 +2,7 @@
 title: "【Darwin Gödel Machine：Open-Ended Evolution of Self-Improving Agents】"
 tags: [paper, recursive-self-improvement, evolutionary-search, coding-agent, status-inbox]
 concepts: ["[[Recursive self-improvement]]", "[[Evolutionary program search]]", "[[Meta-optimization]]", "[[Open-ended search]]"]
-papers: ["[[【Self-Taught Optimizer (STOP)：Recursively Self-Improving Code Generation】]]", "[[【Recursive Self-Improvement in AI：From Bounded Self-Refinement to Autonomous Research Loops】]]", "[[【Dream-RSI：Recursive Self-Improvement through Evolving Worlds】]]"]
+papers: ["[[【Self-Taught Optimizer (STOP)：Recursively Self-Improving Code Generation】]]", "[[【Recursive Self-Improvement in AI：From Bounded Self-Refinement to Autonomous Research Loops】]]", "[[【Dream-RSI：Recursive Self-Improvement through Evolving Worlds】]]", "[[【AlphaEvolve：A coding agent for scientific and algorithmic discovery】]]"]
 ---
 
 # 【Darwin Gödel Machine：Open-Ended Evolution of Self-Improving Agents】
@@ -383,3 +383,7 @@ DGM 的實際貢獻，是把「修改自己」作為 coding task，並透過累�
 
 [2] https://arxiv.org/html/2505.22954v3
 [3] https://github.com/jennyzzt/dgm
+
+### 相關論文：AlphaEvolve
+
+- [[【AlphaEvolve：A coding agent for scientific and algorithmic discovery】]]：對照目標程式／搜尋器的演化、多樣候選記憶與精確驗證；不把不同任務分數解讀成同設定優劣比較。

@@ -2,7 +2,7 @@
 title: "Evolutionary program search"
 tags: [concept, program-search, optimization]
 aliases: [進化式程式搜尋, 演化程式搜尋]
-papers: ["[[【LLM-SR：Scientific Equation Discovery via Programming with Large Language Models】]]", "[[【Dream-RSI：Recursive Self-Improvement through Evolving Worlds】]]", "[[【Self-Taught Optimizer (STOP)：Recursively Self-Improving Code Generation】]]", "[[【Darwin Gödel Machine：Open-Ended Evolution of Self-Improving Agents】]]"]
+papers: ["[[【LLM-SR：Scientific Equation Discovery via Programming with Large Language Models】]]", "[[【Dream-RSI：Recursive Self-Improvement through Evolving Worlds】]]", "[[【Self-Taught Optimizer (STOP)：Recursively Self-Improving Code Generation】]]", "[[【Darwin Gödel Machine：Open-Ended Evolution of Self-Improving Agents】]]", "[[【AlphaEvolve：A coding agent for scientific and algorithmic discovery】]]"]
 related: ["[[Symbolic regression]]", "[[In-context learning]]"]
 ---
 
@@ -37,7 +37,13 @@ related: ["[[Symbolic regression]]", "[[In-context learning]]"]
 
 DGM 用成功率 sigmoid 與有效 children 數的倒數抽 parent，保留有編輯能力但不一定高於 parent 的版本；這是譜系探索偏好，不等於量測了行為新奇度。（DGM v3 §3、附錄 C.2、H；https://arxiv.org/html/2505.22954v3 ）
 
+
+## AlphaEvolve的對照
+
+AlphaEvolve演化完整程式檔、多函式與可選meta-prompts，資料庫借鏡MAP-Elites與islands；精確選樣與收錄規則未公開，不能借用其他系統公式冒稱其實作。（v1 §2–3：https://arxiv.org/html/2506.13131v1 ）
+
 ## 出現在這些論文
+- [[【AlphaEvolve：A coding agent for scientific and algorithmic discovery】]]：AlphaEvolve演化完整程式檔、多函式與可選meta-prompts，資料庫借鏡MAP-Elites與islands；精確選樣與收錄規則未公開，不能借用其他系統公式冒稱其實作。
 - [[【Darwin Gödel Machine：Open-Ended Evolution of Self-Improving Agents】]]：DGM 用成功率 sigmoid 與有效 children 數的倒數抽 parent，保留有編輯能力但不一定高於 parent 的版本；這是譜系探索偏好，不等於量測了行為新奇度。
 - [[【Self-Taught Optimizer (STOP)：Recursively Self-Improving Code Generation】]]：用固定語言模型改寫改良器程式，並以改良下游程式的效用作外層評分。
 

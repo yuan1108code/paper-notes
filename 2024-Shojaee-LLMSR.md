@@ -2,7 +2,7 @@
 title: "【LLM-SR：Scientific Equation Discovery via Programming with Large Language Models】"
 tags: [paper, symbolic-regression, scientific-discovery, llm, status-inbox]
 concepts: ["[[Symbolic regression]]", "[[Evolutionary program search]]", "[[In-context learning]]", "[[Neuro-symbolic AI]]"]
-papers: ["[[【Optimizing generative AI by backpropagating language model feedback】]]", "[[【Dream-RSI：Recursive Self-Improvement through Evolving Worlds】]]", "[[【Recursive Self-Improvement in AI：From Bounded Self-Refinement to Autonomous Research Loops】]]"]
+papers: ["[[【Optimizing generative AI by backpropagating language model feedback】]]", "[[【Dream-RSI：Recursive Self-Improvement through Evolving Worlds】]]", "[[【Recursive Self-Improvement in AI：From Bounded Self-Refinement to Autonomous Research Loops】]]", "[[【AlphaEvolve：A coding agent for scientific and algorithmic discovery】]]"]
 ---
 
 # 【LLM-SR：Scientific Equation Discovery via Programming with Large Language Models】
@@ -589,3 +589,7 @@ LLM-SR 的貢獻是把領域語意、可執行結構、連續係數優化及進�
 [1] https://arxiv.org/html/2404.18400v3
 [2] https://arxiv.org/abs/2404.18400
 [3] https://github.com/deep-symbolic-mathematics/LLM-SR
+
+### 相關論文：AlphaEvolve
+
+- [[【AlphaEvolve：A coding agent for scientific and algorithmic discovery】]]：對照目標程式／搜尋器的演化、多樣候選記憶與精確驗證；不把不同任務分數解讀成同設定優劣比較。

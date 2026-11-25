@@ -2,7 +2,7 @@
 title: "Open-ended search"
 tags: [concept, evolutionary-search, agents]
 aliases: ["開放式搜尋", "開放式探索"]
-papers: ["[[【Darwin Gödel Machine：Open-Ended Evolution of Self-Improving Agents】]]"]
+papers: ["[[【Darwin Gödel Machine：Open-Ended Evolution of Self-Improving Agents】]]", "[[【AlphaEvolve：A coding agent for scientific and algorithmic discovery】]]"]
 related: ["[[Evolutionary program search]]", "[[Recursive self-improvement]]", "[[Meta-optimization]]"]
 ---
 
@@ -51,7 +51,13 @@ $\alpha_i$ 是成功率，$n_i$ 僅計有功能的直接 children。所有有資
 
 保存候選版本、父版本、修改內容、逐題成功／失敗、評估條件與成本；允許保留有價值的低分分支，但把最後測試集與正式部署權限留在外部。這可作為 RAG 或離線工業 AI 流程的待驗證設計，不是本文已做過的實驗。
 
+
+## AlphaEvolve的對照
+
+AlphaEvolve以人定義的可計分任務保存多樣程式，借鏡MAP-Elites／island populations；它保留探索多樣性，但未展示無邊界自主選題或整個controller自改。（v1 §2–3：https://arxiv.org/html/2506.13131v1 ）
+
 ## 出現在這些論文
+- [[【AlphaEvolve：A coding agent for scientific and algorithmic discovery】]]：AlphaEvolve以人定義的可計分任務保存多樣程式，借鏡MAP-Elites／island populations；它保留探索多樣性，但未展示無邊界自主選題或整個controller自改。
 
 - [[【Darwin Gödel Machine：Open-Ended Evolution of Self-Improving Agents】]]：以版本 archive 保留 stepping stones，搜尋可遞迴自改的 coding agents。
 

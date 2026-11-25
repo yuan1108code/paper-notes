@@ -2,7 +2,7 @@
 title: "【Self-Taught Optimizer (STOP)：Recursively Self-Improving Code Generation】"
 tags: [paper, recursive-self-improvement, code-generation, meta-optimization, status-inbox]
 concepts: ["[[Recursive self-improvement]]", "[[Evolutionary program search]]", "[[Meta-optimization]]"]
-papers: ["[[【Recursive Self-Improvement in AI：From Bounded Self-Refinement to Autonomous Research Loops】]]", "[[【Dream-RSI：Recursive Self-Improvement through Evolving Worlds】]]", "[[【Darwin Gödel Machine：Open-Ended Evolution of Self-Improving Agents】]]"]
+papers: ["[[【Recursive Self-Improvement in AI：From Bounded Self-Refinement to Autonomous Research Loops】]]", "[[【Dream-RSI：Recursive Self-Improvement through Evolving Worlds】]]", "[[【Darwin Gödel Machine：Open-Ended Evolution of Self-Improving Agents】]]", "[[【AlphaEvolve：A coding agent for scientific and algorithmic discovery】]]"]
 ---
 
 # 【Self-Taught Optimizer (STOP)：Recursively Self-Improving Code Generation】
@@ -456,3 +456,7 @@ release 的 noisy parity 把輸出與標籤都展平成一維，修補了一類�
 ### 相關論文：DGM
 
 - [[【Darwin Gödel Machine：Open-Ended Evolution of Self-Improving Agents】]]：對照累積版本 archive、改進者本身的演化，以及固定外部評估與安全邊界。
+
+### 相關論文：AlphaEvolve
+
+- [[【AlphaEvolve：A coding agent for scientific and algorithmic discovery】]]：對照目標程式／搜尋器的演化、多樣候選記憶與精確驗證；不把不同任務分數解讀成同設定優劣比較。

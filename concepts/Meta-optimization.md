@@ -2,7 +2,7 @@
 title: "Meta-optimization"
 tags: [concept, optimization, agents]
 aliases: ["元優化", "後設最佳化", "優化優化器"]
-papers: ["[[【Self-Taught Optimizer (STOP)：Recursively Self-Improving Code Generation】]]", "[[【Dream-RSI：Recursive Self-Improvement through Evolving Worlds】]]", "[[【Darwin Gödel Machine：Open-Ended Evolution of Self-Improving Agents】]]"]
+papers: ["[[【Self-Taught Optimizer (STOP)：Recursively Self-Improving Code Generation】]]", "[[【Dream-RSI：Recursive Self-Improvement through Evolving Worlds】]]", "[[【Darwin Gödel Machine：Open-Ended Evolution of Self-Improving Agents】]]", "[[【AlphaEvolve：A coding agent for scientific and algorithmic discovery】]]"]
 related: ["[[Recursive self-improvement]]", "[[Evolutionary program search]]"]
 ---
 
@@ -47,7 +47,13 @@ Dream-RSI 將「決定走哪條探索分支、並行多少、何時停止」的�
 
 DGM 把可改進的 coding agent 作為下一輪修改者，但 archive 與 parent-selection 控制器仍固定；不能把 agent 效能提升說成搜尋控制器也被優化。（DGM v3 §3、附錄 C.2、H；https://arxiv.org/html/2505.22954v3 ）
 
+
+## AlphaEvolve的對照
+
+AlphaEvolve可以演化搜尋器，讓多代策略接續改善數學物件，並允許另一路meta-prompt演化；最終物件可精確驗證，仍不代表完整搜尋歷程或評估契約已被證明。（v1 §2–3：https://arxiv.org/html/2506.13131v1 ）
+
 ## 出現在這些論文
+- [[【AlphaEvolve：A coding agent for scientific and algorithmic discovery】]]：AlphaEvolve可以演化搜尋器，讓多代策略接續改善數學物件，並允許另一路meta-prompt演化；最終物件可精確驗證，仍不代表完整搜尋歷程或評估契約已被證明。
 - [[【Darwin Gödel Machine：Open-Ended Evolution of Self-Improving Agents】]]：DGM 把可改進的 coding agent 作為下一輪修改者，但 archive 與 parent-selection 控制器仍固定；不能把 agent 效能提升說成搜尋控制器也被優化。
 
 - [[【Self-Taught Optimizer (STOP)：Recursively Self-Improving Code Generation】]]
