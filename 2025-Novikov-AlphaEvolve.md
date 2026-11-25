@@ -17,6 +17,7 @@ papers: ["[[【Darwin Gödel Machine：Open-Ended Evolution of Self-Improving Ag
 | 發表性質 | White paper／arXiv preprint；本版本未提供已接受會議或期刊資訊，不補造會議、頁碼或DOI。[1][3] |
 | 連結 | [arXiv摘要](https://arxiv.org/abs/2506.13131) · [HTML全文](https://arxiv.org/html/2506.13131v1) · [PDF v1](https://arxiv.org/pdf/2506.13131v1) · [官方結果庫](https://github.com/google-deepmind/alphaevolve_results) |
 | 引用（IEEE） | A. Novikov et al., “AlphaEvolve: A coding agent for scientific and algorithmic discovery,” 2025, *arXiv:2506.13131*. |
+| 動畫解說 | [papers.poyuanchu.com/2025-novikov-alphaevolve/](https://papers.poyuanchu.com/2025-novikov-alphaevolve/) |
 | 公開範圍 | 官方repo釋出數學構造、矩陣乘法分解及對應驗證程式，<b>不是執行完整AlphaEvolve的程式碼</b>。本次靜態核對快照為 `4226acbf237ff9ad10ba7673a2af127a2d8a5971`。[4][5][6] |
 | 授權 | 筆記原圖直接連結Novikov等人（2025）未改作的arXiv圖檔。arXiv論文／HTML標示CC BY-NC-ND 4.0；PDF另印Google DeepMind版權聲明。結果庫的software為Apache2.0、其他repo材料為CC BY4.0，不能把結果庫授權直接套用到整篇論文或原圖。[2][3][5] |
 
