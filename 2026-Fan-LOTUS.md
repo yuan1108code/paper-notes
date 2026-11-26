@@ -18,6 +18,7 @@ papers: ["[[【Attention is all you need】]]", "[[【Interleaving Retrieval wit
 | 版本 | arXiv:2606.31779v2，2026 年 7 月 13 日；初稿 2026 年 6 月 30 日。本筆記讀完整份 30 頁，含附錄 A–F |
 | 連結 | [原文摘要](https://arxiv.org/abs/2606.31779v2)；[PDF](https://arxiv.org/pdf/2606.31779v2)；[HTML](https://arxiv.org/html/2606.31779v2)；[程式碼](https://github.com/yingfan-bot/lotus) |
 | 引用（IEEE） | Y. Fan, A. Svete, and K. Lee, “Bridging the gap between latent and explicit reasoning with looped transformers,” 2026, *arXiv:2606.31779*, ver. 2, doi: 10.48550/arXiv.2606.31779. |
+| 動畫解說 | [papers.poyuanchu.com/2026-fan-lotus/](https://papers.poyuanchu.com/2026-fan-lotus/) |
 | 與研究主題相關度 | 4 / 5：高效率 LLM 推理與中間監督設計可借用；需要另外訓練，不是可直接取代 RAG 檢索的提示詞技巧 |
 | 程式稽核範圍 | 公開儲存庫 commit `eb77e2f7909c5006f58ff0ad7cd6629b942caa9e`，僅靜態閱讀；沒有執行作者程式、安裝環境、下載模型或重跑訓練 |
 | 圖像來源 | 下列四圖直接引用已核對的 arXiv v2 原圖 URL，白底顯示，不另行重製散布。arXiv non-exclusive distribution license 不等於 CC-BY |
