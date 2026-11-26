@@ -2,7 +2,7 @@
 title: "【Interleaving Retrieval with Chain-of-Thought Reasoning for Knowledge-Intensive Multi-Step Questions】"
 tags: [paper, llm, rag, multi-hop-qa, status-inbox]
 concepts: ["[[Retrieval-augmented generation]]", "[[Multi-hop question answering]]", "[[Chain-of-thought prompting]]", "[[BM25]]", "[[Compound AI system]]"]
-papers: ["[[【Optimizing generative AI by backpropagating language model feedback】]]", "[[【PlanRAG：A Plan-then-Retrieval Augmented Generation for Generative Large Language Models as Decision Makers】]]", "[[【PixelRAG：Web Screenshots Beat Text for Retrieval-Augmented Generation】]]", "[[【Only Ask What You Don't Know：Grounded Delta Planning for Efficient Multi-step RAG】]]", "[[【SAG：SQL-Retrieval Augmented Generation with Query-Time Dynamic Hyperedges】]]"]
+papers: ["[[【Optimizing generative AI by backpropagating language model feedback】]]", "[[【PlanRAG：A Plan-then-Retrieval Augmented Generation for Generative Large Language Models as Decision Makers】]]", "[[【PixelRAG：Web Screenshots Beat Text for Retrieval-Augmented Generation】]]", "[[【Only Ask What You Don't Know：Grounded Delta Planning for Efficient Multi-step RAG】]]", "[[【SAG：SQL-Retrieval Augmented Generation with Query-Time Dynamic Hyperedges】]]", "[[【Bridging the Gap Between Latent and Explicit Reasoning with Looped Transformers】]]"]
 ---
 
 # 【Interleaving Retrieval with Chain-of-Thought Reasoning for Knowledge-Intensive Multi-Step Questions】
@@ -286,3 +286,5 @@ IRCoT 在 MuSiQue 仍是最好；HotpotQA 略輸 DSP（F1 差 2.0），2WikiMQA 
 - 相關論文：[[【SAG：SQL-Retrieval Augmented Generation with Query-Time Dynamic Hyperedges】]]（SAG：沿用 IRCoT／HippoRAG 2 的評測協定，改用事件–實體索引與 SQL JOIN 串起多步驟證據）
 - 同期做法：ReAct（Yao et al., 2022）、SelfAsk（Press et al., 2022）、DecomP（Khot et al., ICLR 2023）、DSP（Khattab et al., 2023）
 - 資料集：HotpotQA、2WikiMultihopQA、MuSiQue（同一作者）、IIRC
+
+- 對照論文：[[【Bridging the Gap Between Latent and Explicit Reasoning with Looped Transformers】]]（LOTUS 以共同精煉的連續表示承載內部推理；不是外部檢索機制，也不是原始 Transformer 直接具備的推論能力）。

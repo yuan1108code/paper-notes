@@ -2,7 +2,7 @@
 title: "【Attention is all you need】"
 tags: [paper, deep-learning, nlp, transformer, status-inbox]
 concepts: ["[[Transformer]]", "[[Self-attention]]", "[[Positional encoding]]", "[[BLEU]]", "[[Backpropagation]]", "[[LoRA]]", "[[Vision-language model]]", "[[Retrieval-augmented generation]]"]
-papers: []
+papers: ["[[【Bridging the Gap Between Latent and Explicit Reasoning with Looped Transformers】]]"]
 ---
 
 # 【Attention is all you need】
@@ -380,3 +380,5 @@ PPL（perplexity，困惑度）是每個子詞的困惑度，衡量模型對正�
 - 概念：[[Transformer]]、[[Self-attention|自注意力]]、[[Positional encoding|位置編碼]]、[[BLEU]]、[[Backpropagation|反向傳播]]、[[LoRA]]（在 Transformer 的注意力權重上做低秩微調）、[[Vision-language model|視覺語言模型]]（把 Transformer 用到圖片）、[[Retrieval-augmented generation|RAG]]
 - 前身：Bahdanau et al., *Neural Machine Translation by Jointly Learning to Align and Translate*（2014，第一個注意力翻譯模型）；ConvS2S（Gehring et al., 2017）；ByteNet（Kalchbrenner et al., 2016）
 - 後續：BERT（2018，只用編碼器）、GPT 系列（只用解碼器）、ViT（2020，用在圖片）；Pre-LN（Xiong et al., 2020）、FlashAttention（2022）
+
+- 對照論文：[[【Bridging the Gap Between Latent and Explicit Reasoning with Looped Transformers】]]（LOTUS 以共同精煉的連續表示承載內部推理；不是外部檢索機制，也不是原始 Transformer 直接具備的推論能力）。

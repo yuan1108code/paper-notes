@@ -2,8 +2,8 @@
 title: "Transformer"
 tags: [concept, deep-learning]
 aliases: ["變換器", "Transformer 架構"]
-papers: ["[[【Attention is all you need】]]"]
-related: ["[[Self-attention]]", "[[Positional encoding]]", "[[LoRA]]", "[[Vision-language model]]"]
+papers: ["[[【Attention is all you need】]]", "[[【Bridging the Gap Between Latent and Explicit Reasoning with Looped Transformers】]]"]
+related: ["[[Self-attention]]", "[[Positional encoding]]", "[[LoRA]]", "[[Vision-language model]]", "[[Looped Transformer]]"]
 ---
 
 # Transformer
@@ -12,7 +12,7 @@ related: ["[[Self-attention]]", "[[Positional encoding]]", "[[LoRA]]", "[[Vision
 > **一句話**：完全用注意力（不用 RNN、不用卷積）組成的神經網路架構，2017 年為了機器翻譯提出，現在所有大型語言模型、嵌入模型、視覺語言模型都建立在它上面。
 
 ## 白話解釋
-每一層做兩件事：(1) 自注意力：每個字看句子裡所有其他字，依相關程度吸收資訊；(2) 前饋網路：每個字各自再加工一次。兩者外面都包著殘差連接和層正規化，疊很多層。因為沒有遞迴，所有位置可以同時算；順序資訊則靠位置編碼補上。
+每一層做兩件事：(1) 自注意力：每個字看句子裡所有其他字，依相關程度吸收資訊；(2) 前饋網路：每個字各自再加工一次。兩者外面都包著殘差連接和層正規化，疊很多層。原始 Transformer 在一層內可平行處理位置；解碼器仍受 causal mask 限制，推論產字有序列依賴。後續 Looped Transformer 可另加共享權重的迴圈，不應把「沒有 RNN 層」等同所有變體都不做反覆計算；順序資訊靠位置編碼等機制補上。
 
 ## 三種變體
 | 變體 | 結構 | 代表 | 用途 |
@@ -28,7 +28,10 @@ related: ["[[Self-attention]]", "[[Positional encoding]]", "[[LoRA]]", "[[Vision
 > 自注意力的計算量是長度的平方。脈絡越長越貴，這是長文件 RAG 要先檢索、篩選的根本原因。
 
 ## 出現在這些論文
+- [[【Bridging the Gap Between Latent and Explicit Reasoning with Looped Transformers】]]：LOTUS 的平行 latent 工作區、共享迴圈與 gold CoT 監督；與只改提示詞不同。
 - [[【Attention is all you need】]]
 
 ## 相關概念
 [[Self-attention]]、[[Positional encoding]]、[[LoRA]]、[[Vision-language model]]
+
+[[Looped Transformer]]

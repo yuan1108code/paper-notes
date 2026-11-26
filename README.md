@@ -2,7 +2,7 @@
 
 朱泊原（Po-Yuan Chu）的論文閱讀筆記，繁體中文。主要編輯在 HackMD，Obsidian 由 HackMD 同步；這個 repo 是版本紀錄與公開備份。
 
-## 論文（23 篇）
+## 論文（24 篇）
 
 - [【Attention is all you need】](2017-Vaswani-Transformer.md)
 - [【pyannote.audio 2.1 speaker diarization pipeline：principle, benchmark, and recipe】](2023-Bredin-pyannote21.md)
@@ -23,6 +23,7 @@
 - [【MemRec：Collaborative Memory-Augmented Agentic Recommender System】](2026-Chen-MemRec.md)
 - [【Recursive Self-Improvement in AI：From Bounded Self-Refinement to Autonomous Research Loops】](2026-Chen-RSISurvey.md)
 - [【Only Ask What You Don't Know：Grounded Delta Planning for Efficient Multi-step RAG】](2026-Chou-GDPRAG.md)
+- [【Bridging the Gap Between Latent and Explicit Reasoning with Looped Transformers】](2026-Fan-LOTUS.md)
 - [【PixelRAG：Web Screenshots Beat Text for Retrieval-Augmented Generation】](2026-Wang-PixelRAG.md)
 - [【SAG：SQL-Retrieval Augmented Generation with Query-Time Dynamic Hyperedges】](2026-Wu-SAG.md)
 - [【Darwin Gödel Machine：Open-Ended Evolution of Self-Improving Agents】](2026-Zhang-DGM.md)
@@ -30,7 +31,7 @@
 
 ## 概念筆記
 
-`concepts/` 共 64 篇，論文筆記的 front matter 以 `[[ ]]` 連結（Obsidian 格式）。
+`concepts/` 共 67 篇，論文筆記的 front matter 以 `[[ ]]` 連結（Obsidian 格式）。
 
 ## 檔案說明
 

@@ -2,8 +2,8 @@
 title: "Chain-of-thought prompting"
 tags: [concept, llm]
 aliases: ["思維鏈提示", "CoT"]
-papers: ["[[【Optimizing generative AI by backpropagating language model feedback】]]", "[[【Interleaving Retrieval with Chain-of-Thought Reasoning for Knowledge-Intensive Multi-Step Questions】]]", "[[【PlanRAG：A Plan-then-Retrieval Augmented Generation for Generative Large Language Models as Decision Makers】]]", "[[【Only Ask What You Don't Know：Grounded Delta Planning for Efficient Multi-step RAG】]]", "[[【A Survey on LLM-as-a-Judge】]]", "[[【MMAD：A Comprehensive Benchmark for Multimodal Large Language Models in Industrial Anomaly Detection】]]", "[[【Triad：Empowering LMM-Based Anomaly Detection with Expert-Guided Region-of-Interest Tokenizer and Manufacturing Process】]]"]
-related: ["[[Prompt optimization]]"]
+papers: ["[[【Optimizing generative AI by backpropagating language model feedback】]]", "[[【Interleaving Retrieval with Chain-of-Thought Reasoning for Knowledge-Intensive Multi-Step Questions】]]", "[[【PlanRAG：A Plan-then-Retrieval Augmented Generation for Generative Large Language Models as Decision Makers】]]", "[[【Only Ask What You Don't Know：Grounded Delta Planning for Efficient Multi-step RAG】]]", "[[【A Survey on LLM-as-a-Judge】]]", "[[【MMAD：A Comprehensive Benchmark for Multimodal Large Language Models in Industrial Anomaly Detection】]]", "[[【Triad：Empowering LMM-Based Anomaly Detection with Expert-Guided Region-of-Interest Tokenizer and Manufacturing Process】]]", "[[【Bridging the Gap Between Latent and Explicit Reasoning with Looped Transformers】]]"]
+related: ["[[Prompt optimization]]", "[[Latent reasoning]]", "[[Looped Transformer]]", "[[Knowledge distillation]]"]
 ---
 
 # Chain-of-thought prompting
@@ -21,6 +21,7 @@ related: ["[[Prompt optimization]]"]
 Wei et al., *Chain-of-thought prompting elicits reasoning in large language models*, NeurIPS 2022
 
 ## 出現在這些論文
+- [[【Bridging the Gap Between Latent and Explicit Reasoning with Looped Transformers】]]：LOTUS 的平行 latent 工作區、共享迴圈與 gold CoT 監督；與只改提示詞不同。
 - [[【PlanRAG：A Plan-then-Retrieval Augmented Generation for Generative Large Language Models as Decision Makers】]]
 - [[【Interleaving Retrieval with Chain-of-Thought Reasoning for Knowledge-Intensive Multi-Step Questions】]]
 - [[【Optimizing generative AI by backpropagating language model feedback】]]
@@ -31,3 +32,5 @@ Wei et al., *Chain-of-thought prompting elicits reasoning in large language mode
 
 ## 相關概念
 [[Prompt optimization]]
+
+[[Latent reasoning]]、[[Looped Transformer]]、[[Knowledge distillation]]
